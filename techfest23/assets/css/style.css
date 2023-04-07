@@ -62,18 +62,11 @@ a {
     background-color: red;
     padding: 20px;
 }
-.skew{
-    z-index: -1;
-    list-style: none;
-    background-color: rgb(46, 3, 3);
-    padding: 20px;
-}
 .item-right{
     margin-right: -200px;
 }
 .item-left{
     margin-left: -200px;
-    padding-left: 500px;
 }
 .item-right .menu-list {
   justify-content: end;
