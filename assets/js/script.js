@@ -49,3 +49,70 @@ nextBtn.addEventListener("click", () => {
   carouselImages[counter].classList.add("active");
 });
 
+// Smooth scroll for the navigation menu and links with .scrollto classes
+$(document).on('click', 'a, .scrollto', function (e) {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    e.preventDefault();
+    var target = $(this.hash);
+    if (target.length) {
+
+      var scrollto = target.offset().top;
+
+      $('html, body').animate({
+        scrollTop: scrollto
+      }, 1500, 'easeInOutExpo');
+
+      if ($(this).parents('.nav').length) {
+        $('.nav .active,  .active').removeClass('active');
+        $(this).closest('a').addClass('active');
+      }
+      return false;
+    }
+  }
+});
+
+// Activate smooth scroll on page load with hash links in the url
+$(document).ready(function () {
+  if (window.location.hash) {
+    var initial_nav = window.location.hash;
+    if ($(initial_nav).length) {
+      var scrollto = $(initial_nav).offset().top;
+      $('html, body').animate({
+        scrollTop: scrollto
+      }, 1500, 'easeInOutExpo');
+    }
+  }
+});  // Smooth scroll for the navigation menu and links with .scrollto classes
+$(document).on('click', 'a, .scrollto', function (e) {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    e.preventDefault();
+    var target = $(this.hash);
+    if (target.length) {
+
+      var scrollto = target.offset().top;
+
+      $('html, body').animate({
+        scrollTop: scrollto
+      }, 1500, 'easeInOutExpo');
+
+      if ($(this).parents('.nav').length) {
+        $('.nav .active,  .active').removeClass('active');
+        $(this).closest('a').addClass('active');
+      }
+      return false;
+    }
+  }
+});
+
+// Activate smooth scroll on page load with hash links in the url
+$(document).ready(function () {
+  if (window.location.hash) {
+    var initial_nav = window.location.hash;
+    if ($(initial_nav).length) {
+      var scrollto = $(initial_nav).offset().top;
+      $('html, body').animate({
+        scrollTop: scrollto
+      }, 1500, 'easeInOutExpo');
+    }
+    }
+  });
