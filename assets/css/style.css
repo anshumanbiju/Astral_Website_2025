@@ -563,6 +563,13 @@ a {
   .centered-text h2{
     font-size: 74px;
   }
+  .item-right {
+    margin-right: -3%;
+  }
+  
+  .item-left {
+    margin-left: -3%;
+  }
 }
 
 @media screen and (max-width: 280px){
