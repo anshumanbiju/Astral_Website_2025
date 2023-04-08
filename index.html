@@ -77,71 +77,92 @@
       <source src="assets/imgs/astral.mp4" type="video/mp4">
     </video>
   </div>
-  
-  
-  <div class="landing">
-    <!-- navbar -->
-    <nav class="nav">
-      <div class="navigation-bar container">
-        <div class="item-left" style="transform: skewX(-30deg);">
-          <ul class="menu-list1">
-            <li><a href="javascript:void(0)">ABOUT US</a></li>
-            <li><a href="javascript:void(0)">CONTACT US</a></li>
-          </ul>
-        </div>
 
-        <div class="item-center">
-          <img src="assets/imgs/logo.png" alt="logo">
-        </div>
+  <div id="mobile">
+    <div class="landing">
+      <!-- navbar -->
+      <nav class="nav">
+        <div class="navigation-bar container">
+          <div class="item-left" style="transform: skewX(-30deg);">
+            <ul class="menu-list1">
+              <li><a href="javascript:void(0)">ABOUT US</a></li>
+              <li><a href="javascript:void(0)">CONTACT US</a></li>
+            </ul>
+          </div>
 
-        <div class="item-right" style="transform: skewX(30deg);">
-          <ul class="menu-list2">
-            <li><a href="javascript:void(0)">REGISTRATION</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="menu-backdrop"></div>
-    </nav>
+          <div class="item-center">
+            <img src="assets/imgs/logo.png" alt="logo" id="burgerBtn">
+          </div>
 
-    <!-- home -->
-    <div class="home">
-      <div class="centered-text">
-        <h2><span>Astral</span> <span style="background : rgb(255, 0, 0);-webkit-background-clip: text;">2</span>3</h2>
-        <div class="tag">
-          <p>ASPIRE | <span style="color: red;"> INSPIRE </span>| CONQUER</p>
+          <div class="item-right" style="transform: skewX(30deg);">
+            <ul class="menu-list2">
+              <li><a href="javascript:void(0)">REGISTRATION</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="spinner scroll-down"> <a class="animate" href="#about"></a> </div>
-      <div class="date">
-        <p>April 25 | 26 | 27</p>
-      </div>
+        <div class="menu-backdrop"></div>
+      </nav>
     </div>
-  </div>
-  <section id="about" style="margin-top: 100px;">
-    <div class="about-section">
-      <section class="about-us">
-        <div class="image-carousel">
-          <div class="carousel-slide">
-            <img src="assets/imgs/backimg.jpg" alt="Image 1">
+    <div class="landing">
+      <!-- home -->
+      <div class="home" id="mobileBodyContent">
+        <div class="centered-text">
+          <h2>Astral</h2>
+          <h2><span>2</span>3</h2>
+          <div class="tag">
+            <p>ASPIRE | <span> INSPIRE </span>| CONQUER</p>
           </div>
-          <div class="carousel-slide">
-            <img src="assets/imgs/logo.png" alt="Image 2">
-          </div>
-          <div class="carousel-slide">
-            <img src="assets/imgs/astral.mp4" alt="Image 3">
-          </div>
-          <button class="prev-btn">&#10094;</button>
-          <button class="next-btn">&#10095;</button>
         </div>
-        <div class="about-content">
-          <h2 style="  font-family: 'valorant';
-          ">About Us</h2>
-          <p style="font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lacus fermentum, laoreet lorem vel, commodo lectus. Fusce in mi et magna dictum tristique eu quis justo. Sed sodales neque vitae ante suscipit, quis commodo justo lacinia. Fusce malesuada libero in elit tristique tristique. Nulla convallis vestibulum massa, at viverra sapien dignissim a. Integer convallis libero vel nisi imperdiet consectetur.</p>
+        <div class="spinner scroll-down"> <a class="animate" href="#about"></a> </div>
+        <div class="date">
+          <p>April 25 | 26 | 27</p>
+        </div>
+      </div>
+
+      <section id="about" style="margin-top: 100px;">
+        <div class="about-section">
+          <section class="about-us">
+            <div class="image-carousel">
+              <div class="carousel-slide">
+                <img src="assets/imgs/backimg.jpg" alt="Image 1">
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/imgs/logo.png" alt="Image 2">
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/imgs/astral.mp4" alt="Image 3">
+              </div>
+              <button class="prev-btn">&#10094;</button>
+              <button class="next-btn">&#10095;</button>
+            </div>
+            <div class="about-content">
+              <h2 style="font-family: 'valorant';">About Us</h2>
+              <p style="font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit. Sed eu lacus fermentum, laoreet lorem vel, commodo lectus. Fusce in mi et magna dictum tristique
+                eu
+                quis justo. Sed sodales neque vitae ante suscipit, quis commodo justo lacinia. Fusce malesuada libero in
+                elit tristique tristique. Nulla convallis vestibulum massa, at viverra sapien dignissim a. Integer
+                convallis
+                libero vel nisi imperdiet consectetur.</p>
+            </div>
+          </section>
         </div>
       </section>
-      
-  </section>
+    </div>
+  </div>
   <script src="assets/js/script.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
 </body>
 
 

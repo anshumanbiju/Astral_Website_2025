@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'valorant';
-  src: url('/assets/fonts/Valorant\ Font.ttf');
+  src: url('../fonts/Valorant\ Font.ttf');
 }
 section{
   margin-top: 110px;
@@ -52,6 +52,7 @@ body {
 body {
   margin: 0;
   background-image: url("../imgs/backimg.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -241,7 +242,7 @@ a {
 
 .centered-text {
   /* display: flex; */
-  margin-top: 300px;
+  margin-top: 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -257,15 +258,16 @@ a {
   /* font-family: 'Cinzel Decorative', cursive; */
   margin: 0;
   line-height: 1.2;
+  text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7)
 }
 
 .centered-text h2 span {
-  background: rgba(255, 255, 255, 1);
+  color: rgb(255, 0, 0);
   /* background: linear-gradient(270deg, rgba(255,167,194,1) 1%, rgba(255,37,89,1) 40%); */
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; */
 }
 
 .tag p {
@@ -276,6 +278,7 @@ a {
   /* font-family: 'Cinzel Decorative', cursive; */
   margin: 0;
   line-height: 1.2;
+  text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7)
 }
 
 .tag p span {
@@ -500,11 +503,13 @@ a {
   font-family: 'valorant';
   /* font-family: 'Cinzel Decorative', cursive; */
   line-height: 1.2;
+  text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7)
 }
 
 .landing {
   max-width: 100vW;
   overflow-x: hidden;
+  transition: all 0.3s ease-in;
 }
 
 .landing::before {
@@ -516,6 +521,70 @@ a {
   height: 100%;
   z-index: -1;
 }
+.home{
+  transform: scale(0.85);
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  -o-transform: scale(0.85);
+}
+
+/* mobile view */
+@media screen and (max-width: 768px) {
+  .item-center{
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+  }
+  .item-left .menu-list1{
+    display: none;
+  }
+  .item-right .menu-list2{
+    display: none;
+  }
+  .landing {
+    background: url("../imgs/backimg.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .home{
+    padding: 20px;
+    align-items: center;
+  }
+  .date p {
+    font-size: 24px;
+    padding-top: 35%;
+  }
+  .centered-text{
+    scale: 0.9;
+    font-size: 24px;
+    margin-top: 25%;
+  }
+  .centered-text h2{
+    font-size: 74px;
+  }
+}
+
+@media screen and (max-width: 280px){
+  .home{
+    padding: 20px;
+    align-items: center;
+  }
+  .date p {
+    font-size: 24px;
+    bottom : 0px;
+    padding-top: 50%;
+  }
+  .centered-text{
+    scale: 0.9;
+    font-size: 24px;
+    margin-top: 25%;
+  }
+  .centered-text h2{
+    font-size: 64px;
+  }
+}
+
 /* about page */
 .about-us {
   display: flex;
@@ -583,3 +652,17 @@ a {
   margin-bottom: 20px;
 }
 
+
+/* mobile view */
+@media screen and (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .image-carousel {
+    margin: 0 0 20px;
+  }
+  .about-content {
+    text-align: center;
+  }
+}
