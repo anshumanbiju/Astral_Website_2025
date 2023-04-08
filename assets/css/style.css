@@ -590,6 +590,13 @@ a {
   .centered-text h2{
     font-size: 64px;
   }
+  .item-right {
+    margin-right: -3%;
+  }
+  
+  .item-left {
+    margin-left: -3%;
+  }
 }
 
 /* about page */
