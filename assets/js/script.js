@@ -16,38 +16,8 @@ window.addEventListener("load", function () {
     }
   }
 });
-$(function () {
-  $('a[href*=#]').on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
-  });
-});
-const carouselSlide = document.querySelector(".carousel-slide");
-const carouselImages = document.querySelectorAll(".carousel-slide img");
 
-// Buttons
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
 
-// Counter
-let counter = 0;
-const size = carouselImages[0].clientWidth;
-
-// Set initial position of images
-carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-carouselImages[counter].classList.add("active");
-
-// Button listeners
-nextBtn.addEventListener("click", () => {
-  if (counter >= carouselImages.length - 1) return;
-  carouselSlide.style.transition = "transform 1s ease-in-out";
-  counter++;
-  carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-  carouselImages.forEach((image) =>
-    image.classList.remove("active")
-  );
-  carouselImages[counter].classList.add("active");
-});
 
 // Smooth scroll for the navigation menu and links with .scrollto classes
 $(document).on('click', 'a, .scrollto', function (e) {
@@ -117,3 +87,83 @@ $(document).ready(function () {
   }
 });
 
+// mobile navigation 
+
+var nav_button = document.getElementById('burgerBtn');
+var content = document.getElementById('mobile');
+var nav_menu = document.getElementById('nav-menu-container');
+
+// nav_button.addEventListener('click', function () {
+//   // nav_menu.classList.toggle('active');
+//   content.classList.toggle('hide1');
+// }
+// );
+
+// change nav-bar position to fixed on scroll
+let height = screen.height;
+let vid = document.getElementById('vvv'); 
+
+function removeh() {
+  vid.classList.remove('hide');
+}
+function addh() {
+  vid.classList.add('hide');
+}
+
+window.onscroll = function (){
+  if (window.pageYOffset > height) {
+    $('nav').addClass('header-scrolled');
+    removeh();
+  } else {
+    $('nav').removeClass('header-scrolled');
+    addh();
+  }
+}
+
+
+// function GetThisHidden(){
+//   $(".hide1").css("opacity", "0").on('transitionend webkitTransitionEnd oTransitionEnd otransitionend', HideTheElementAfterAnimation);
+// }
+
+// function GetThisDisplayed(){
+//   $(".hide1").css("display", "relative").css("opacity", "1").unbind("transitionend webkitTransitionEnd oTransitionEnd otransitionend");
+// }
+
+// function HideTheElementAfterAnimation(){
+//   $(".hide1").css("display", "none");
+// }
+
+
+function fadeOutElement(element, callback) {
+    if (typeof callback === "function") {
+      callback();
+    }
+    else{
+      $(element).fadeOut("slow", "swing") 
+    }
+}
+
+function fadeInElement(element, callback) {
+  $(element).css("display", "flow-root").fadeIn("slow", "swing", function() {
+    if (typeof callback === "function") {
+      callback();
+    }
+  });
+}
+
+nav_button.addEventListener('click', function () {
+  $("#mobile").toggle(function() {
+    if ($(this).is(":visible")) {
+      fadeOutElement(".hide1", function() {
+        fadeInElement(".hide1");
+      });
+    } else {
+      fadeOutElement(".hide1");
+    }
+  });
+});
+// // To fade in the element
+// fadeElement(".hide1", "in");
+
+// // To fade out the element
+// fadeElement(".hide1", "out");

@@ -1209,3 +1209,66 @@ a {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
+
+/* mobile drop down nav from logo */
+.hide{
+  display: none!important;
+}
+
+.hide1 {
+  opacity: 1; /*startwithzeroopacity*/
+}
+
+.hide1.fade-in {
+  animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+}
+
+.hide1.fade-out {
+  animation: fadeout 1s;
+  -webkit-animation: fadeout 1s;
+}
+
+.header-scrolled{
+  position: fixed;
+  z-index: 4;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: inset 6px 5px 30px 0px rgba(5, 5, 5, 0.68);
+  box-shadow: 6px 5px 30px 0px rgba(5, 5, 5, 0.68);
+  padding: 0px;
+  margin: 0px;
+  animation-name: fadein;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadein{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeout{
+  0% {opacity: 1;}
+  90% {opacity: 0;}
+  100% {display: none;}
+}
+
+.header-scrolled .navigation-bar{
+  z-index: 4;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+}
+.header-scrolled .navigation-bar{
+  z-index: 4;
+  width: 100vw;
+}
+.header-scrolled .video-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+
+}
