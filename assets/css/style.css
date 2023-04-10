@@ -21,9 +21,9 @@
   font-family: 'valorant';
   src: url('../fonts/Valorant\ Font.ttf');
 }
-section{
+/* section{
   margin-top: 110px;
-}
+} */
 html,
 body {
   height: 100%;
@@ -613,6 +613,62 @@ a {
     padding: 10px 0;
   }
 }
+/* aboutus */
+.about-us {
+  background: url(../imgs/web.jpg);
+  padding: 50px 0;
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: auto, auto;
+  height: 100vh;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  font-family: 'valorant';
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 300px;
+}
+.about-us h2 span {
+  color: rgb(255, 0, 0);
+  /* background: linear-gradient(270deg, rgba(255,167,194,1) 1%, rgba(255,37,89,1) 40%); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; */
+}
+.about-us .row {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us .col-6 {
+  flex-basis: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-us img {
+  width: 100%;
+  height: auto;
+}
+
+.about-us p {
+  font-size: 28px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /* events */
 .events-section {
   background-image: url(../imgs/7240001.jpg);
@@ -695,52 +751,68 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   padding: 50px;
-  height: 100vh;
+  height: 90vh;
 }
 .wk-section h2{
   font-family: 'valorant';
   color: white;
 }
 .wk-container {
+  /* margin-left: 300px; */
+}
+
+.carousel {
+  height: 450px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .controls {
+  opacity: 1;
   display: flex;
-  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 0;
   justify-content: space-between;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease 0.5s;
+}
+.carousel .controls .control {
+  margin: 0 5px;
+  display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.5;
+  transition: ease 0.3s;
+  cursor: pointer;
 }
-
-/* HORIZONTAL SCROLL */
-.scroll-container{
-  overflow: auto;
-  white-space: nowrap;
-  padding: 5px 70px 5px 20px;
-  background: transparent;
-  height: 100%;
-  border-radius:15px;
+.carousel .slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out all;
 }
-
-.gridscroll{
-  display:inline-block;
+.carousel .slides .slide {
+  margin-left: 40px;
+  height: auto;
 }
-
-.gridscroll img {
-  margin-right:22px;
-  height: 40%;
-  width: 40%;
-  filter: blur(5px);
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 30px;
-}
-.gridscroll img:hover {
-  transform: scale(1.1);
-  position: relative;
-}
-.workshop-faq {
-  margin-top: 50px;
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
+.faq{
+  margin-top: 0;
+  background-image: url(../imgs/Screenshot\ \(258\).png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .workshop-faq h3 {
