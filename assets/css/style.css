@@ -1142,53 +1142,73 @@ a {
   /* margin-left: 300px; */
 }
 
-.carousel {
-  height: 450px;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.carousel .controls {
-  opacity: 1;
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 99999;
-  transition: all ease 0.5s;
-}
-
-.carousel .controls .control {
-  margin: 0 5px;
+.wrapper-wk .outer{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
-  opacity: 0.5;
-  transition: ease 0.3s;
-  cursor: pointer;
+  margin-top: 300px;
 }
-
-.carousel .slides {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: flex;
+.wrapper-wk .card{
   width: 100%;
-  transition: 1s ease-in-out all;
+  max-width:430px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  justify-content: space-between;
+  border-radius: 100px 20px 20px 100px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  animation: animate 15s linear infinite;
+  animation-delay: calc(3s * var(--delay));
+}
+.outer:hover .card{
+  animation-play-state: paused;
+}
+.wrapper-wk .card:last-child{
+  animation-delay: calc(-3s * var(--delay));
+}
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: translateX(100%) scale(0.5);
+  }
+  5%, 20%{
+    opacity: 0.4;
+    transform: translateX(100%) scale(0.7);
+  }
+  25%, 40%{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%, 60%{
+    opacity: 0.4;
+    transform: translateX(-100%) scale(0.7);
+  }
+  65%, 100%{
+    opacity: 0;
+    transform: translateX(-100%) scale(0.5);
+  }
+}
+.card .content{
+  display: flex;
+  align-items: center;
 }
 
-.carousel .slides .slide {
-  margin-left: 40px;
-  height: auto;
+.card .img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .details{
+  margin-left: 80px;
+}
+
+.card a:hover{
+  transform: scale(0.94);
 }
 
 .faq {
@@ -1200,47 +1220,62 @@ a {
   background-position: center;
 }
 
-.workshop-faq h3 {
-  margin-bottom: 20px;
+.containerwidth {
+  width: 60%;
+  padding-left: 480px;
+}
+.containerwidth h3{
   color: #f9f9f9;
   font-family: 'valorant';
   font-size: 30px;
   text-align: center;
 }
+.wrapper {
+  background-color: #11d4be;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+}
 
-.faq-question {
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-  display: block;
-  font-size: 25px;
+.toggle,
+.content {
+  font-family: "Poppins", sans-serif;
+}
+
+.toggle {
   width: 100%;
-  background: none;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 600;
   border: none;
-  color: white;
-  padding: 10px;
+  outline: none;
   cursor: pointer;
+  padding: 10px 0;
 }
-
-.faq-answer {
-  font-size: 25px;
-  font-family: 'Courier New', Courier, monospace;
-  display: none;
-  text-align: center;
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  transition: max-height 0.3s ease-in-out;
-  max-height: 0;
+.content {
+  position: relative;
+  font-size: 19px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  color: white;
   overflow: hidden;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
-
-.faq-answer.active {
-  display: block;
-  max-height: 500px;
-  /* Change this to the max height you want the answer to expand to */
-}
-
 /* footer */
 .site-footer {
   padding: 45px 0 20px;
@@ -1325,6 +1360,10 @@ a {
 }
 
 @media (max-width:767px) {
+  .containerwidth {
+    width: 100%;
+    padding-left: 0px;
+  }
   .site-footer {
     padding-bottom: 0
   }
@@ -1425,7 +1464,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://tinypic.host/images/2023/04/02/02154848.jpg') no-repeat center center/cover;
+  background: url('../imgs/a_great_journey_by_at0mikkattcha_dfsd8tp.jpg') no-repeat center center/cover;
   z-index: -1;
   opacity: 1;
   transition: all .5s ease-in;
@@ -1451,7 +1490,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #2371ae 0%, #bb47d4 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
   transform: skew(30deg) translateX(125%);
   opacity: 0.9;
   transition: all 0.6s ease;
@@ -1464,7 +1503,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #2371ae 0%, #bb47d4 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
   transform: skew(30deg) translateX(-125%);
   opacity: 0.9;
   transition: all 0.6s ease;
@@ -1472,19 +1511,19 @@ a {
 
 .profile-container:hover .profile-wrapper::after {
   transform: skew(30deg) translateX(125%);
-  background: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
 
 }
 
 .profile-container:hover .profile-wrapper::before {
   transform: skew(30deg) translateX(-125%);
-  background: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
 }
 
 /* Profile Card */
 .profile-card {
-  width: 100%;
-  height: 100%;
+  background-image: url(../imgs/backimg.jpg);
+  width: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1493,13 +1532,13 @@ a {
   padding: 1rem 10px;
   position: relative;
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .profile-container:hover .profile-card {
   opacity: 1;
-  transition: all 0.6s ease;
-  transition-delay: 0.2s;
+  width: 280px;
+  height: 280px;
 }
 
 .profile-card .fav-icon {
@@ -1515,14 +1554,13 @@ a {
 .profile-card img {
   display: block;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height:500px;
   object-fit: cover;
   border-radius: 50%;
   margin: 1rem 0;
   border: 2px solid transparent;
-  background-image: linear-gradient(white, white),
-    linear-gradient(to right, green, gold);
+  background-image: linear-gradient(to right, #4f0707 0%, #a32222 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
   /* border: 2px solid #1999; */
@@ -1531,32 +1569,23 @@ a {
 
 .profile-card h2 {
   line-height: 1.2;
-  color: #222;
+  color: white;
 }
 
-.profile-card h4 {
+/* .profile-card h4 {
   line-height: 1.5;
   color: #444;
-}
+} */
 
 .profile-card p {
   line-height: 1.2;
-  color: #333;
+  color: white;
   margin: 10px 0;
 }
 
 /* Profile Icons */
-.profile-card .icons {
-  display: flex;
-  color: #333;
-  width: 90%;
-  justify-content: space-evenly;
-  font-size: 1.4rem;
-  margin: 5px 0;
-}
-
 .profile-card .icons i:hover {
-  background-image: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
+  background-image: linear-gradient(to right, #4f0707 0%, #a32222 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1574,8 +1603,9 @@ a {
   margin-top: 1rem;
   background: #2371ae;
   border-radius: 50px;
-  background: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
 }
+
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
