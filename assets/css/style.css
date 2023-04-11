@@ -594,7 +594,6 @@ a {
 
   .about-us p {
     font-size: 18px !important;
-    padding-top: 35%;
     scale: -1px;
     line-height: 1;
   }
@@ -636,7 +635,6 @@ a {
   
   .about-us p {
     font-size: 18px;
-    padding-top: 35%;
     scale: -1px;
     line-height: 1;
   }
@@ -645,12 +643,20 @@ a {
 /* aboutus */
 .about-us {
   background: url(../imgs/web.jpg);
-  padding: 50px 0;
+  /* padding: 50px 0; */
   margin-top: 0;
   background-repeat: no-repeat;
   background-position: left top, right top;
   background-size: cover;
   background-attachment: fixed;
+}
+
+
+.black-fade{
+  padding: 50px 0;
+  margin: 0px;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 60%);
+  width: 100%;
 }
 
 .about-us h2 {
@@ -1361,7 +1367,7 @@ a {
 
 .header-scrolled {
   position: fixed;
-  z-index: 4;
+  z-index: 99;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: inset 6px 5px 30px 0px rgba(5, 5, 5, 0.68);

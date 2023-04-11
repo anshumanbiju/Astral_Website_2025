@@ -100,7 +100,7 @@ var nav_menu = document.getElementById('nav-menu-container');
 // );
 
 // change nav-bar position to fixed on scroll
-let height = screen.height;
+// let height = screen.height;
 let vid = document.getElementById('vvv'); 
 
 function removeh() {
@@ -111,7 +111,7 @@ function addh() {
 }
 
 window.onscroll = function (){
-  if (window.pageYOffset > height) {
+  if (window.pageYOffset > 50) {
     $('nav').addClass('header-scrolled');
     removeh();
   } else {
