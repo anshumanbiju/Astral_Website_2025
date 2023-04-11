@@ -202,3 +202,8 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
   changeSlide(false);
   restart();
 });
+
+setInterval(function() {
+  var element = document.querySelector('#title1');
+  element.classList.toggle('glitch');
+}, 3000);
