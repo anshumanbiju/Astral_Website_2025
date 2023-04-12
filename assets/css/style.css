@@ -597,6 +597,10 @@ a {
     scale: -1px;
     line-height: 1;
   }
+
+  .about-us .col-6{
+    width: 70vw;
+  }
 }
 
 @media screen and (max-width: 280px) {
@@ -657,6 +661,7 @@ a {
   margin: 0px;
   background: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 60%);
   width: 100%;
+  padding: 50px;
 }
 
 .about-us h2 {
@@ -1048,11 +1053,12 @@ a {
 /* events */
 .events-section {
   background-image: url(../imgs/7240001.jpg);
-  padding: 50px;
-  height: 90vh;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .events-section h2 {
@@ -1066,6 +1072,9 @@ a {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 /* .event {
@@ -1448,7 +1457,8 @@ a {
 }
 
 .profile-container {
-  width: 300px;
+  height: 525px;
+  width: 400px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1457,7 +1467,15 @@ a {
 
 }
 
-.profile-container::before {
+.profile-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s all ease;
+  z-index: 1;
+  width: 300px;
+  height: 100%;
+  position: relative;
   content: '';
   position: absolute;
   top: 0;
@@ -1469,6 +1487,8 @@ a {
   opacity: 1;
   transition: all .5s ease-in;
 }
+
+
 
 .profile-container:hover:before {
   opacity: 0;
@@ -1523,13 +1543,14 @@ a {
 /* Profile Card */
 .profile-card {
   background-image: url(../imgs/backimg.jpg);
-  width: 140px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1rem 10px;
+  padding: 1rem 0px;
   position: relative;
   opacity: 0;
   transition: all 0.1s ease;
@@ -1537,8 +1558,8 @@ a {
 
 .profile-container:hover .profile-card {
   opacity: 1;
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
 }
 
 .profile-card .fav-icon {
@@ -1554,7 +1575,6 @@ a {
 .profile-card img {
   display: block;
   margin: 0 auto;
-  width: 500px;
   height:500px;
   object-fit: cover;
   border-radius: 50%;
@@ -1581,6 +1601,7 @@ a {
   line-height: 1.2;
   color: white;
   margin: 10px 0;
+  padding: 0 10px;
 }
 
 /* Profile Icons */
@@ -1606,6 +1627,24 @@ a {
   background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
 }
 
+#lineDrawing {
+  background: #050505;
+  margin:0px;
+  height:100vh;
+  text-align: center;
+  overflow: hidden;
+}
+.my-path {
+  fill:none;
+  stroke-width:4;
+}
+
+svg{
+  padding-top: 18%;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
@@ -1680,6 +1719,11 @@ a {
   box-shadow: 0 2px 80px 0 rgba(0, 0, 0, 0.33);
 }
 
+section {
+  overflow: hidden;
+  max-width: 100vw;
+}
+
 .color-overlay {
   content: "";
   position: absolute;
@@ -1688,6 +1732,7 @@ a {
   background-color: #64646417;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+
   /* -webkit-mask-image: linear-gradient(to bottom, transparent 1%, black 25%);
   mask-image: linear-gradient(to bottom, transparent 1%, black 25%); */
 }
@@ -1699,6 +1744,7 @@ a {
   height: 100vh;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 60%);
 }
 
 /* mobile drop down nav from logo */
