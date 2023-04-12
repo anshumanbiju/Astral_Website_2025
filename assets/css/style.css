@@ -79,8 +79,64 @@ a {
   position: relative;
   z-index: 9;
 }
-.mobile-menu{
-  opacity: 0;
+.menu-list1, .menu-list2 {
+  display: none;
+}
+.menu-btn {
+  display: block;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(63, 11, 6);
+  background: radial-gradient(circle, rgb(95, 21, 14) 24%, rgb(63, 11, 6) 60%);    padding: 20px 0;
+  z-index: 999;
+}
+.mobile-menu .menu-list3 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile-menu .menu-list3 li {
+  text-align:center;
+  margin: 10px 0;
+}
+.menu-list3 li a,
+  .menu-list3 li a:after {
+  display: block;
+  font-size: 40px;
+  color: #ffffff;
+  white-space: pre;
+  font-weight: bold;
+  stroke-width: 0;
+  position: relative;
+}
+
+.menu-list3 li a:after {
+  content: attr(data-text);
+  color: #e21818;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  overflow: hidden;
+  transition: 3s linear width;
+  -webkit-transition: 2s linear width;
+  -moz-transition: 3s linear width;
+  -o-transition: 3s linear width;
+  -ms-transition: 3s linear width;
+}
+
+.menu-list3 li a:hover:after {
+  width: 100%;
+  cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
   .menu-list1, .menu-list2 {
