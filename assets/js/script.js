@@ -206,3 +206,9 @@ setInterval(function() {
         });
     }
 //]]>
+
+$(document).ready(function() {
+  $('.menu-btn').click(function() {
+    $('.mobile-menu').slideToggle();
+  });
+});
