@@ -79,9 +79,6 @@ a {
   position: relative;
   z-index: 9;
 }
-.mobile-menu{
-  opacity: 0;
-}
 @media only screen and (max-width: 768px) {
   .menu-list1, .menu-list2 {
     display: none;
