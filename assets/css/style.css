@@ -1575,7 +1575,7 @@ a {
   margin: 10px;
   position: relative;
   overflow: hidden;
-  background: url('../imgs/a_great_journey_by_at0mikkattcha_dfsd8tp.jpg') no-repeat center center/cover;
+  background: transparent;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   transition: 1s all ease;
