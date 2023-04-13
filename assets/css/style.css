@@ -1435,7 +1435,7 @@ a {
   line-height: 34px;
   color: #ffffff;
   background: rgb(154,14,14);
-  background: linear-gradient(0deg, rgb(3, 57, 65) 5%, rgb(56, 3, 3)30%);  
+  background: linear-gradient(0deg, rgb(2, 103, 2)0.2%, rgb(29, 24, 1)25%);    
   background-attachment: fixed;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -1513,9 +1513,6 @@ a {
 }
 
 @media (max-width:767px) {
-  .text-glitch{
-    padding-right:90px;
-  }
   .about-us{
     width: 100%;  
   }
@@ -1524,6 +1521,17 @@ a {
   }
   .about-us .col-6{
     padding: 10px;
+  }
+   .events-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    /* max-width: 100vw; */
+    /* overflow: hidden; */
   }
   .containerwidth {
     width: 100%;
