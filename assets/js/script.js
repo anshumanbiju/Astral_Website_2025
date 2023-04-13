@@ -152,12 +152,21 @@ function fadeInElement(element, callback) {
 }
 
 nav_button.addEventListener('click', function () {
+  // this.classList.toggle('rotate');
+ 
   $("#mobile").toggle(function() {
     if ($(this).is(":visible")) {
-      fadeOutElement(".hide1", function() {
+      $(nav_button).css({
+        transform: 'rotate(0deg)',
+        transition: 'transform 0.5s ease'
+      },fadeOutElement(".hide1", function() {
         fadeInElement(".hide1");
-      });
+      }));
     } else {
+      $(nav_button).css({
+        transform: 'rotate(180deg)',
+        transition: 'transform 0.5s ease'
+      });
       fadeOutElement(".hide1");
     }
   });
