@@ -221,3 +221,25 @@ $(document).ready(function() {
     $('.mobile-menu').slideToggle();
   });
 });
+const moreBtns = document.querySelectorAll('.more-btn');
+const popupContainer = document.querySelector('.popup-container');
+const closeBtns = document.querySelectorAll('.close-btn');
+const popups = document.querySelectorAll('.popup');
+
+moreBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const popupId = btn.dataset.popup;
+    const popup = document.querySelector(`#${popupId}-popup`);
+    popupContainer.style.display = 'block';
+    popups.forEach(p => {
+      p.style.display = 'none';
+    });
+    popup.style.display = 'block';
+  });
+});
+
+closeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
+  });
+});
