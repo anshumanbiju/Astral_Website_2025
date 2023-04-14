@@ -243,3 +243,9 @@ closeBtns.forEach(btn => {
     popupContainer.style.display = 'none';
   });
 });
+$('.slider').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});

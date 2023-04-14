@@ -75,6 +75,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -154,59 +156,175 @@
         <div id="mobile" class="hide1">
             <section class="workshop" id="workshop">
                 <div class="wk-container">
-                  <div class="card rc-card">
-                    <div class="wk-wrapper">
-                      <img src="assets/imgs/RC%20RACING%20UPDATED.jpg" class="cover-image" />
+                    <div class="card rc-card">
+                        <div class="wk-wrapper">
+                            <img src="assets/imgs/RC%20RACING%20UPDATED.jpg" class="cover-image" />
+                        </div>
+                        <div class="character">
+                            <p>Join the Ultimate RC Racing Experience: Where Precision, Strategy, and Skill Meet for
+                                Heart-Pounding Action and Endless Fun!</p>
+                            <a href="#" class="more-btn" data-popup="rc-racing-experience">More</a>
+                        </div>
                     </div>
-                    <div class="character">
-                      <p>Join the Ultimate RC Racing Experience: Where Precision, Strategy, and Skill Meet for Heart-Pounding Action and Endless Fun!</p>
-                      <a href="#" class="more-btn" data-popup="rc-racing-experience">More</a>
+
+                    <div class="card vr-card">
+                        <div class="wk-wrapper">
+                            <img src="assets/imgs/robo.jpg" class="cover-image" />
+                        </div>
+                        <div class="character">
+                            <p>Experience the Future of Gaming with Our Virtual Reality Games and Simulators</p>
+                            <a href="#" class="more-btn" data-popup="virtual-reality-games">More</a>
+                        </div>
                     </div>
-                  </div>
-              
-                  <div class="card vr-card">
-                    <div class="wk-wrapper">
-                      <img src="assets/imgs/robo.jpg" class="cover-image" />
+                    <div class="card vr-card">
+                        <div class="wk-wrapper">
+                            <img src="assets/imgs/RC RACING UPDATED.jpg" class="cover-image" />
+                        </div>
+                        <div class="character">
+                            <p>Experience the Future of Gaming with Our Virtual Reality Games and Simulators</p>
+                            <a href="#" class="more-btn" data-popup="robo-show">More</a>
+                        </div>
                     </div>
-                    <div class="character">
-                      <p>Experience the Future of Gaming with Our Virtual Reality Games and Simulators</p>
-                      <a href="#" class="more-btn" data-popup="virtual-reality-games">More</a>
+                    <div class="card vr-card">
+                        <div class="wk-wrapper">
+                            <img src="assets/imgs/RC RACING UPDATED.jpg" class="cover-image" />
+                        </div>
+                        <div class="character">
+                            <p>Experience the Future of Gaming with Our Virtual Reality Games and Simulators</p>
+                            <a href="#" class="more-btn" data-popup="robo-show">More</a>
+                        </div>
                     </div>
-                  </div>
+                    <div class="card vr-card">
+                        <div class="wk-wrapper">
+                            <img src="assets/imgs/RC RACING UPDATED.jpg" class="cover-image" />
+                        </div>
+                        <div class="character">
+                            <p>Experience the Future of Gaming with Our Virtual Reality Games and Simulators</p>
+                            <a href="#" class="more-btn" data-popup="robo-show">More</a>
+                        </div>
+                    </div>
+                    <div class="card vr-card">
+                        <div class="wk-wrapper">
+                            <img src="assets/imgs/RC RACING UPDATED.jpg" class="cover-image" />
+                        </div>
+                        <div class="character">
+                            <p>Experience the Future of Gaming with Our Virtual Reality Games and Simulators</p>
+                            <a href="#" class="more-btn" data-popup="robo-show">More</a>
+                        </div>
+                    </div>
                 </div>
-              </section>
-              
-              <!-- Pop-up screens -->
-<div class="popup-container">
-    <div class="popup" id="rc-racing-experience-popup">
-      <div class="popup-content">
-        <img src="assets/imgs/RC%20RACING%20UPDATED.jpg" alt="RC Racing Experience" class="popup-image">
-        <div>
-          <h2>RC Racing Experience</h2>
-          <p>Get ready for heart-pounding action and endless fun with our ultimate RC racing experience! Our state-of-the-art racing track, precision RC cars, and skilled racers will keep you on the edge of your seat.</p>
-          <button class="close-btn"><a href="#" style="text-decoration: none; color: white;">Register</a></button>
+            </section>
+
+            <!-- Pop-up screens -->
+            <div class="popup-container">
+                <div class="popup" id="rc-racing-experience-popup">
+                    <div class="popup-content">
+                        <img src="assets/imgs/RC%20RACING%20UPDATED.jpg" alt="RC Racing Experience" class="popup-image">
+                        <div>
+                            <h2>RC Racing Experience</h2>
+                            <p>Get ready for heart-pounding action and endless fun with our ultimate RC racing
+                                experience! Our state-of-the-art racing track, precision RC cars, and skilled racers
+                                will keep you on the edge of your seat.</p>
+                            <button class="close-btn"><a href="#"
+                                    style="text-decoration: none; color: white;">Register</a></button>
+
+                        </div>
+                    </div>
+                    <button class="close-btn">Close</button>
+                </div>
+
+                <div class="popup" id="virtual-reality-games-popup">
+                    <div class="popup-content">
+                        <img src="assets/imgs/robo.jpg" alt="Virtual Reality Games" class="popup-image">
+                        <div>
+                            <h2>Virtual Reality Games</h2>
+                            <p>Step into a whole new world of gaming with our virtual reality games and simulators.
+                                Experience the future of gaming like never before!</p>
+                            <button class="close-btn"><a href="#"
+                                    style="text-decoration: none; color: white;">Register</a></button>
+                        </div>
+                    </div>
+                    <button class="close-btn">Close</button>
+                </div>
+                <div class="popup" id="robo-show-popup">
+                    <div class="popup-content">
+                        <img src="assets/imgs/RC RACING UPDATED.jpg" alt="Robo Show" class="popup-image">
+                        <div>
+                            <h2>Robo Show</h2>
+                            <p>Hellooo</p>
+                            <button class="close-btn"><a href="#"
+                                    style="text-decoration: none; color: white;">Register</a></button>
+                        </div>
+                    </div>
+                    <button class="close-btn">Close</button>
+                </div>
+
+            </div>
+            <footer class="footer">
+                <div class="slider">
+                    <img src="assets/imgs/7240001.jpg" alt="image1" />
+                    <img src="assets/imgs/7240001.jpg" alt="image2" />
+                    <img src="assets/imgs/7240001.jpg" alt="image3" />
+                    <img src="assets/imgs/7240001.jpg" alt="image4" />
+                    <img src="assets/imgs/7240001.jpg" alt="image5" />
+                    <img src="assets/imgs/7240001.jpg" alt="image6" />
+                    <img src="assets/imgs/7240001.jpg" alt="image7" />
+                    <img src="assets/imgs/7240001.jpg" alt="image8" />
+
+
+                </div>
+                <div class="footer__redes">
+                    <ul class="footer__redes-wrapper">
+                        <li>
+                            <a href="#" class="footer__link">
+                                <i class="fab fa-facebook-f"></i>
+                                facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                <i class="fab fa-twitter"></i>
+                                twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                <i class="fab fa-instagram"></i>
+                                instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                <i class="fab fa-youtube"></i>
+                                youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="separador"></div>
+                <p class="footer__texto">SREE BUDDHA COLLEGE OF ENGINEERING, PATTOOR P.O, NOORANAD, ALAPPUZHA - 690529
+                </p>
+                <p class="footer__textoc">Copyright &copy; 2023 All Rights Reserved by
+                    <a href="#">SBCE</a>.
+                </p>
+            </footer>
+
 
         </div>
-      </div>
-      <button class="close-btn">Close</button>
-    </div>
-  
-    <div class="popup" id="virtual-reality-games-popup">
-      <div class="popup-content">
-        <img src="assets/imgs/robo.jpg" alt="Virtual Reality Games" class="popup-image">
-        <div>
-          <h2>Virtual Reality Games</h2>
-          <p>Step into a whole new world of gaming with our virtual reality games and simulators. Experience the future of gaming like never before!</p>
-          <button class="close-btn"><a href="#" style="text-decoration: none; color: white;">Register</a></button>
-        </div>
-      </div>
-      <button class="close-btn">Close</button>
-    </div>
-    
-  </div>
-  
-              
-        </div>
+        <script>
+            var lineDrawing = anime({
+                targets: '#lineDrawing .lines path',
+                strokeDashoffset: [anime.setDashoffset, 0],
+                easing: 'easeInOutSine',
+                duration: 4000,
+                direction: 'alternate',
+                delay: 500,
+                loop: true,
+            });
+        </script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/slick/slick.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="assets/vendor/jquery/jquery.min.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
