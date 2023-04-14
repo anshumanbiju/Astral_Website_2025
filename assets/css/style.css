@@ -1365,6 +1365,10 @@ a {
 }
 
 /* workshop */
+.workshop{
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
 .wk-section {
   margin-top: 0;
   background-image: url(../imgs/Screenshot\ \(258\).png);
@@ -1383,6 +1387,8 @@ a {
 
 .wk-container {
   /* margin-left: 300px; */
+  
+  backdrop-filter: blur(20px);
 }
 
 .wrapper-wk .outer {
@@ -1640,10 +1646,11 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     z-index: 1;
+    padding: 0px;
     /* max-width: 100vw; */
     /* overflow: hidden; */
   }
@@ -1792,18 +1799,6 @@ a {
 
   .about-us .col-6 {
     padding: 10px;
-  }
-
-  .events-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    /* max-width: 100vw; */
-    /* overflow: hidden; */
   }
 
   .boxaccordion {
@@ -2850,4 +2845,17 @@ section {
 
 .fadeIn-right{
   left: 80%;
+}
+
+.contact a{
+  color: rgba(255, 255, 255, 0.904);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact h2{
+  color: rgba(255, 255, 255, 0.904);
+  font-size: 20px;
+  font-weight: 500;
 }
