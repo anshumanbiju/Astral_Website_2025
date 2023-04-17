@@ -2593,6 +2593,8 @@ section {
 .popup p {
   line-height: 1.2;
   color: white;
+  text-align: center;
+  flex-direction: column;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 0;
