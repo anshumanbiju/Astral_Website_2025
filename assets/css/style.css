@@ -2897,3 +2897,10 @@ section {
   font-size: 20px;
   font-weight: 500;
 }
+
+
+
+/* Event .html tech or non tech text */
+.tech-non-tech{
+	opacity:1;
+}
