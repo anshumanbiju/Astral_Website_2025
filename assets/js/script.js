@@ -250,7 +250,7 @@ $('.slider').slick({
   autoplaySpeed: 2000,
 });
 
-var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || /iphone|ipod|ipad/i.test(navigator.userAgent);
 var myDiv = document.getElementById("nav");
 var divHeight = myDiv.offsetHeight;
 var navbarvid = document.getElementById("vvv");
