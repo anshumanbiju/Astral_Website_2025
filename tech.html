@@ -11,16 +11,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
+
     <link rel="favicon" href="assets/imgs/logo.png">
     <link rel="icon" href="assets/imgs/logo.png" type="image/icon type">
     <link rel="apple-touch-icon" href="assets/imgs/logo.png">
     <link rel="mask-icon" href="assets/imgs/logo.png" color="#ff0000">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#000000">
-    <meta name="description" content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
+    <meta name="description"
+        content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
     <meta name="keywords"
-      content="tech fest, tech, tech sbce, sbce, astral, astral 2K23, tech fest alappuzha, alappuzha, kerala, sbce pattoor">
+        content="tech fest, tech, tech sbce, sbce, astral, astral 2K23, tech fest alappuzha, alappuzha, kerala, sbce pattoor">
     <meta name="author" content="Astral">
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="7 days">
@@ -30,10 +31,10 @@
     <meta name="googlebot" content="index, follow">
     <meta name="google" content="nositelinkssearchbox">
     <meta name="google" content="notranslate">
-  
+
     <meta property="og:title" content="Astral 2K23">
     <meta property="og:description"
-      content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
+        content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
     <meta property="og:image" content="assets/imgs/logo.png">
     <meta property="og:url" content=".......">
     <meta property="og:site_name" content="Astral 2K23">
@@ -41,16 +42,16 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="en_GB">
     <meta property="og:locale:alternate" content="en_IN">
-  
+
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@astral_sbce">
     <meta name="twitter:creator" content="@astral_sbce">
     <meta name="twitter:title" content="Astral 2K23">
     <meta name="twitter:description"
-      content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
+        content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
     <meta name="twitter:image" content="assets/imgs/logo.png">
     <meta name="twitter:image:alt" content="Astral 2K23">
-  
+
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:dnt" content="on">
     <meta name="twitter:domain_verify" content="">
@@ -63,7 +64,7 @@
     <meta name="twitter:app:name:googleplay" content="Astral 2K23">
     <meta name="twitter:app:id:googleplay" content="">
     <meta name="twitter:app:url:googleplay" content="......">
-  
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Astral 2K23">
@@ -78,7 +79,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
-  </head>
+</head>
 
 <body>
     <div id="loader">
@@ -103,11 +104,11 @@
 
             <!-- navbar -->
             <nav class="nav">
-                <div class="navigation-bar container" style="z-index: index 4;">
+                <div class="navigation-bar container" id="nav">
                     <div class="item-left" style="transform: skewX(-30deg);">
                         <ul class="menu-list1">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="javascript:void(0)">CONTACT US</a></li>
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
                         </ul>
                     </div>
 
@@ -123,14 +124,13 @@
                     </div>
                     <div class="mobile-menu gl">
                         <ul class="menu-list3">
-                            <li><a href="index.html" data-text="HOME">HOME</a></li>
-                            <li><a href="javascript:void(0)" data-text="CONTACT US">CONTACT US</a></li>
+                            <li><a href="contact.html" data-text="CONTACT US">CONTACT US</a></li>
                             <li><a href="event.html" data-text="Events">Events</a></li>
                             <li><a href="wk.html" data-text="Workshops">Workshops</a></li>
                         </ul>
                         <div class="home" id="mobileBodyContent">
                             <div class="centered-text">
-                                <h2>Astral 2<span>3</span></h2>
+                                <h2>ASTRAL 2<span>3</span></h2>
 
                                 <div class="tag">
                                     <p>ASPIRE | <span> INSPIRE </span>| CONQUER</p>
@@ -150,22 +150,26 @@
                         </video>
                     </div>
                 </div>
+
+                <div class="menu-backdrop"></div>
+            </nav>
         </div>
-        <div class="menu-backdrop"></div>
-        </nav>
 
         <div id="mobile" class="hide1">
             <section class="workshop" id="workshop">
 
-                <div style="display: grid;place-content: center;font-weight: bold;margin-bottom: 40px;margin-top: 100px;">
-                    <div class="text-glitch" data-text="Technical Events" style="--text-glitch-time: 2s;font-family: 'valorant';">
-                      Technical <span>Events</span></div>
-                  </div>
+                <div
+                    style="display: grid;place-content: center;font-weight: bold;margin-bottom: 40px;margin-top: 100px;">
+                    <div class="text-glitch" data-text="Technical Events"
+                        style="--text-glitch-time: 2s;font-family: 'valorant';">
+                        Technical <span>Events</span></div>
+                </div>
 
                 <div class="wk-container">
 
                     <!-- EC Events -->
-                    <div class="card Burn-Out-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card Burn-Out-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/Burn-Out.jpg" class="cover-image" />
                         </div>
@@ -175,7 +179,8 @@
                         </div>
                     </div>
 
-                    <div class="card Line-Chaser-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card Line-Chaser-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/Line-Chaser.jpg" class="cover-image" />
                         </div>
@@ -188,7 +193,8 @@
                     </div>
 
                     <!-- BIOTHINK TANK -->
-                    <div class="card biothink-tank-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card biothink-tank-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/biothink-tank.jpeg" class="cover-image" />
                         </div>
@@ -198,9 +204,10 @@
                             <a href="#" class="more-btn" data-popup="biothink-tank">More</a>
                         </div>
                     </div>
-                   
-                     <!--THIN QUIZZIE-->
-                     <div class="card thin-quizzie-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+
+                    <!--THIN QUIZZIE-->
+                    <div class="card thin-quizzie-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/thin-quizzie.jpeg" class="cover-image" />
                         </div>
@@ -209,7 +216,8 @@
                             <a href="#" class="more-btn" data-popup="thin-quizzie">More</a>
                         </div>
                     </div>
-                    <div class="card Kirchoff's-Caper-Treasure-Hunt-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card Kirchoff's-Caper-Treasure-Hunt-card" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/Kirchoff's-Caper-Treasure-Hunt.jpg" class="cover-image" />
                         </div>
@@ -219,7 +227,8 @@
                             <a href="#" class="more-btn" data-popup="Kirchoff-Caper-Treasure-Hunt">More</a>
                         </div>
                     </div>
-                    <div class="card Robo-War-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card Robo-War-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/Robo-War.jpg" class="cover-image" />
                         </div>
@@ -228,9 +237,10 @@
                             <a href="#" class="more-btn" data-popup="Robo-War">More</a>
                         </div>
                     </div>
-                   
-                   
-                    <div class="card dare-to-code-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+
+
+                    <div class="card dare-to-code-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/dare to code.jpg" class="cover-image" />
                         </div>
@@ -240,7 +250,8 @@
                             <a href="#" class="more-btn" data-popup="dare-to-code">More</a>
                         </div>
                     </div>
-                    <div class="card ui-design-competition-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card ui-design-competition-card" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/ui design.jpg" class="cover-image" />
                         </div>
@@ -250,7 +261,8 @@
                             <a href="#" class="more-btn" data-popup="ui-design-competition">More</a>
                         </div>
                     </div>
-                    <div class="card larcade-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card larcade-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/larcade.jpg" class="cover-image" />
                         </div>
@@ -260,7 +272,8 @@
                             <a href="#" class="more-btn" data-popup="larcade">More</a>
                         </div>
                     </div>
-                    <div class="card survey-hunt-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card survey-hunt-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/survey.jpg" class="cover-image" />
                         </div>
@@ -270,296 +283,323 @@
                             <a href="#" class="more-btn" data-popup="survey-hunt">More</a>
                         </div>
                     </div>
-                    <div class="card Drone-Xtreme-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card Drone-Xtreme-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
-                        <img src="assets/imgs/Drone Xtreme.jpg" class="cover-image" />
+                            <img src="assets/imgs/Drone Xtreme.jpg" class="cover-image" />
                         </div>
                         <div class="character">
-                        <p>Get ready to soar to new heights and experience the ultimate thrill with Drone Racing – the sky's the limit</p>
-                        <a href="#" class="more-btn" data-popup="Drone-Xtreme">More</a>
+                            <p>Get ready to soar to new heights and experience the ultimate thrill with Drone Racing –
+                                the sky's the limit</p>
+                            <a href="#" class="more-btn" data-popup="Drone-Xtreme">More</a>
                         </div>
                     </div>
-                    <div class="card Technical-Quiz-card"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="card Technical-Quiz-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1500">
                         <div class="wk-wrapper">
-                        <img src="assets/imgs/Technical Quiz.jpg" class="cover-image" />
+                            <img src="assets/imgs/Technical Quiz.jpg" class="cover-image" />
                         </div>
                         <div class="character">
-                        <p>Expand your technical knowledge and challenge your skills – the ultimate test awaits!</p>
-                        <a href="#" class="more-btn" data-popup="Technical-Quiz">More</a>
+                            <p>Expand your technical knowledge and challenge your skills – the ultimate test awaits!</p>
+                            <a href="#" class="more-btn" data-popup="Technical-Quiz">More</a>
                         </div>
-                    </div>
                     </div>
                 </div>
-            </section>
+        </div>
+        </section>
 
-            <!-- Pop-up screens -->
-            <div class="popup-container">
-                <!-- BIOTHINK TANK -->
-                <div class="popup" id="biothink-tank-popup">
-                    <div class="popup-content">
-                        <img src="assets/imgs/biothink-tank.jpeg" alt="Biothink Tank" class="popup-image">
-                        <div>
-                            <h2>Biothink Tank</h2>
-                            <p>"The best way to predict the future is to invent it."
-                                - Alan kay<br>
-                                Are you an enthusiastic in problem solving? Then this is the right opportunity for you
-                                to jump in with your ideas and solutions.Astral'23 provides a remarkable chance to
-                                enhance problem solving skills, creativity and critical thinking through the Biothink
-                                Tank.
-                                Here we will provide you with certain industrial problems and all you have to do is find
-                                the appropriate solutions for it within a given time.The more realistic and pragmatic
-                                your solution is the more u stand a chance to win it like a champion
-                                Come, Join us and bring out the game changer in yourself ..</p>
-                            <button class="reg-btn"><a href="https://forms.gle/xMrRowvPUfJ6hxtZ6"
-                                    style="text-decoration: none; color: white;">Register</a></button>
-                        </div>
+        <!-- Pop-up screens -->
+        <div class="popup-container">
+            <!-- BIOTHINK TANK -->
+            <div class="popup" id="biothink-tank-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/biothink-tank.jpeg" alt="Biothink Tank" class="popup-image">
+                    <div>
+                        <h2>Biothink Tank</h2>
+                        <p>"The best way to predict the future is to invent it."
+                            - Alan kay<br>
+                            Are you an enthusiastic in problem solving? Then this is the right opportunity for you
+                            to jump in with your ideas and solutions.Astral'23 provides a remarkable chance to
+                            enhance problem solving skills, creativity and critical thinking through the Biothink
+                            Tank.
+                            Here we will provide you with certain industrial problems and all you have to do is find
+                            the appropriate solutions for it within a given time.The more realistic and pragmatic
+                            your solution is the more u stand a chance to win it like a champion
+                            Come, Join us and bring out the game changer in yourself ..</p>
+                        <button class="reg-btn"><a href="https://forms.gle/xMrRowvPUfJ6hxtZ6"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
                 </div>
-                <div class="popup" id="larcade-popup">
-                    <div class="popup-content">
-                      <img src="assets/imgs/larcade.jpg" alt="L'arcade (Popsicle Bridge Construction)" class="popup-image">
-                      <div>
+                <button class="close-btn">Close</button>
+            </div>
+            <div class="popup" id="larcade-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/larcade.jpg" alt="L'arcade (Popsicle Bridge Construction)"
+                        class="popup-image">
+                    <div>
                         <h2>L'arcade (Popsicle Bridge Construction)</h2>
-                        <p>Welcome to the world of Popsicle Bridge Construction! This is not your ordinary building game - it's a challenge of engineering skills, creativity, and patience. The goal is to construct the strongest possible bridge using only Popsicle sticks and glue. You are on the mission to build your 'London bridge' that will never fall down but will bear the maximum load to be the winner.</p>
-                        <button class="reg-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScngL5DAn9kZJAgJgAPenngCnjZatyd91iqtX37ck0PxX_xjg/viewform?usp=sf_link" style="text-decoration: none; color: white;">Register</a></button>
-                      </div>
+                        <p>Welcome to the world of Popsicle Bridge Construction! This is not your ordinary building game
+                            - it's a challenge of engineering skills, creativity, and patience. The goal is to construct
+                            the strongest possible bridge using only Popsicle sticks and glue. You are on the mission to
+                            build your 'London bridge' that will never fall down but will bear the maximum load
+                            to be the winner.</p>
+                        <button class="reg-btn"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLScngL5DAn9kZJAgJgAPenngCnjZatyd91iqtX37ck0PxX_xjg/viewform?usp=sf_link"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
-                  </div>
-                   <!--THIN QUIZZIE-->
-                 <div class="popup" id="thin-quizzie-popup">
-                    <div class="popup-content">
-                        <img src="assets/imgs/thin-quizzie.jpeg" alt="Thin Quizzie" class="popup-image">
-                        <div>
-                            <h2>Thin Quizzie</h2>
-                            <p>Calling all foodies with a passion for safety, nutrition, and fighting adulteration! Join
-                                our thrilling Quiz Competition - Thin Quizzie and put your knowledge to the test.
-                                Compete for amazing prizes, learn from industry experts, and have a great time
-                                challenging your food expertise. RSVP now and get ready for a fun and engaging event!
-                            </p>
-                            <button class="reg-btn"><a href="https://forms.gle/xR4gzXiRyG8kdnf58"
-                                    style="text-decoration: none; color: white;">Register</a></button>
-                        </div>
-                    </div>
-                    <button class="close-btn">Close</button>
                 </div>
-                <!-- burn out -->
-                <div class="popup" id="Burn-Out-popup">
-                    <div class="popup-content">
-                        <img src="assets/imgs/Burn-Out.jpg" alt="Burn Out" class="popup-image">
-                        <div>
-                            <h2>Burn Out</h2>
-                            <p>Are you ready to rev up your engines and experience the thrill of high-speed racing?
-                                Welcome to the
-                                world of RC racing, where you'll get to compete with some of the fastest
-                                remote-controlled cars
-                                around. With precision controls and lightning-fast speeds, you'll feel like you're
-                                behind the wheel
-                                of a real race car. Whether you're a beginner or an experienced racer, you'll love the
-                                adrenaline
-                                rush of zooming around the track and competing against other racers. So grab your
-                                controller, strap
-                                on your seatbelt, and get ready to experience the excitement of RC racing!</p>
-                            <button class="reg-btn"><a href="https://forms.gle/ACzU411zVfvi7SX96"
-                                    style="text-decoration: none; color: white;">Register</a></button>
-                        </div>
+                <button class="close-btn">Close</button>
+            </div>
+            <!--THIN QUIZZIE-->
+            <div class="popup" id="thin-quizzie-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/thin-quizzie.jpeg" alt="Thin Quizzie" class="popup-image">
+                    <div>
+                        <h2>Thin Quizzie</h2>
+                        <p>Calling all foodies with a passion for safety, nutrition, and fighting adulteration! Join
+                            our thrilling Quiz Competition - Thin Quizzie and put your knowledge to the test.
+                            Compete for amazing prizes, learn from industry experts, and have a great time
+                            challenging your food expertise. RSVP now and get ready for a fun and engaging event!
+                        </p>
+                        <button class="reg-btn"><a href="https://forms.gle/xR4gzXiRyG8kdnf58"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
                 </div>
-                <!-- line chaser -->
-                <div class="popup" id="Line-Chaser-popup">
-                    <div class="popup-content">
-                        <img src="assets/imgs/Line-Chaser.jpg" alt="Line Chaser Robot" class="popup-image">
-                        <div>
-                            <h2>Line Chaser Robot</h2>
-                            <p>Get ready to race towards the finish line with the Line chasing Robot Competition! Design
-                                and build
-                                an autonomous robot that can follow a line through twists, turns, and obstacles,
-                                showcasing your
-                                creativity, innovation, and teamwork Join the competition and see if your robot has what
-                                it takes to
-                                cross the finish line first!</p>
-                            <button class="reg-btn"><a
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSdZtByfqSBSJuaUEu-MxIR0FFEfrXbmhxlmGLyw6Imhg-Qdaw/viewform?usp=sf_link"
-                                    style="text-decoration: none; color: white;">Register</a></button>
-                        </div>
+                <button class="close-btn">Close</button>
+            </div>
+            <!-- burn out -->
+            <div class="popup" id="Burn-Out-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/Burn-Out.jpg" alt="Burn Out" class="popup-image">
+                    <div>
+                        <h2>Burn Out</h2>
+                        <p>Are you ready to rev up your engines and experience the thrill of high-speed racing?
+                            Welcome to the
+                            world of RC racing, where you'll get to compete with some of the fastest
+                            remote-controlled cars
+                            around. With precision controls and lightning-fast speeds, you'll feel like you're
+                            behind the wheel
+                            of a real race car. Whether you're a beginner or an experienced racer, you'll love the
+                            adrenaline
+                            rush of zooming around the track and competing against other racers. So grab your
+                            controller, strap
+                            on your seatbelt, and get ready to experience the excitement of RC racing!</p>
+                        <button class="reg-btn"><a href="https://forms.gle/ACzU411zVfvi7SX96"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
                 </div>
-                
-                <div class="popup" id="Robo-War-popup">
-                    <div class="popup-content">
-                        <img src="assets/imgs/Robo-War.jpg" alt="Robo War" class="popup-image">
-                        <div>
-                            <h2>Robo War</h2>
-                            <p>ROBOWAR
-                                From ancient Rome to rural South India, combat has been viewed as a sport enjoyed by
-                                many. With
-                                time, technology, and the advent of robots, a new era of robot combat has entered the
-                                arena. This
-                                year Astral'23 presents ROBOWARS, an ultimate battle between robots, as they dodge
-                                various obstacles
-                                and struggle for survival. It is now time to make your robot formidable with an
-                                unparalleled design
-                                and excellent strategy. The colosseum is open now. Kill or be killed.</p>
-                            <button class="reg-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeS1zuLFBbAriRTy3Bmr9GvMBBgPa5IoUj1D_rSNgYgLc7HhA/viewform"
-                                    style="text-decoration: none; color: white;">Register</a></button>
-                        </div>
+                <button class="close-btn">Close</button>
+            </div>
+            <!-- line chaser -->
+            <div class="popup" id="Line-Chaser-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/Line-Chaser.jpg" alt="Line Chaser Robot" class="popup-image">
+                    <div>
+                        <h2>Line Chaser Robot</h2>
+                        <p>Get ready to race towards the finish line with the Line chasing Robot Competition! Design
+                            and build
+                            an autonomous robot that can follow a line through twists, turns, and obstacles,
+                            showcasing your
+                            creativity, innovation, and teamwork Join the competition and see if your robot has what
+                            it takes to
+                            cross the finish line first!</p>
+                        <button class="reg-btn"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdZtByfqSBSJuaUEu-MxIR0FFEfrXbmhxlmGLyw6Imhg-Qdaw/viewform?usp=sf_link"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
                 </div>
-                
-               
-                <div class="popup" id="dare-to-code-popup">
-                    <div class="popup-content">
-                        <img src="assets/imgs/dare to code.jpg" alt="Dare To Code" class="popup-image">
-                        <div>
-                            <h2>Dare To Code</h2>
-                            <p>Do you have what it takes to become a coding champion? Dare to code and unleash your
-                                potential to create innovative solutions, build cutting-edge applications, and shape the
-                                future of technology. With each line of code, you write, you'll discover new
-                                possibilities and open doors to endless opportunities. So what are you waiting for? Dare
-                                to code and let your creativity take flight!</p>
-                            <button class="reg-btn"><a href="https://forms.gle/VNNjQx31jUM6VfRw7"
-                                    style="text-decoration: none; color: white;">Register</a></button>
-                        </div>
+                <button class="close-btn">Close</button>
+            </div>
+
+            <div class="popup" id="Robo-War-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/Robo-War.jpg" alt="Robo War" class="popup-image">
+                    <div>
+                        <h2>Robo War</h2>
+                        <p>ROBOWAR
+                            From ancient Rome to rural South India, combat has been viewed as a sport enjoyed by
+                            many. With
+                            time, technology, and the advent of robots, a new era of robot combat has entered the
+                            arena. This
+                            year Astral'23 presents ROBOWARS, an ultimate battle between robots, as they dodge
+                            various obstacles
+                            and struggle for survival. It is now time to make your robot formidable with an
+                            unparalleled design
+                            and excellent strategy. The colosseum is open now. Kill or be killed.</p>
+                        <button class="reg-btn"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSeS1zuLFBbAriRTy3Bmr9GvMBBgPa5IoUj1D_rSNgYgLc7HhA/viewform"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
                 </div>
-                <div class="popup" id="ui-design-competition-popup">
-                    <div class="popup-content">
-                        <img src="assets/imgs/ui design.jpg" alt="UI Design Competition" class="popup-image">
-                        <div>
-                            <h2>UI Design Competition</h2>
-                            <p>Are you ready to unleash your creativity and showcase your design skills? We are excited
-                                to announce our upcoming UI/UX designing competition, which will be enkindled on the
-                                27th of April. With the power of technology at your fingertips and your passion for
-                                design, the possibilities are endless. Join us as we push the boundaries of design and
-                                create unforgettable user experiences. Are you ready to accept the challenge?</p>
-                            <button class="reg-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8rPv0T9SeL9mZgLfdEAr3PZQvbX6n5GvKrREz_uMuPeMKyQ/viewform"
-                                    style="text-decoration: none; color: white;">Register</a></button>
-                        </div>
+                <button class="close-btn">Close</button>
+            </div>
+
+
+            <div class="popup" id="dare-to-code-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/dare to code.jpg" alt="Dare To Code" class="popup-image">
+                    <div>
+                        <h2>Dare To Code</h2>
+                        <p>Do you have what it takes to become a coding champion? Dare to code and unleash your
+                            potential to create innovative solutions, build cutting-edge applications, and shape the
+                            future of technology. With each line of code, you write, you'll discover new
+                            possibilities and open doors to endless opportunities. So what are you waiting for? Dare
+                            to code and let your creativity take flight!</p>
+                        <button class="reg-btn"><a href="https://forms.gle/VNNjQx31jUM6VfRw7"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
                 </div>
-                  <div class="popup" id="survey-hunt-popup">
-                    <div class="popup-content">
-                      <img src="assets/imgs/survey.jpg" alt="Survey Hunt" class="popup-image">
-                      <div>
+                <button class="close-btn">Close</button>
+            </div>
+            <div class="popup" id="ui-design-competition-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/ui design.jpg" alt="UI Design Competition" class="popup-image">
+                    <div>
+                        <h2>UI Design Competition</h2>
+                        <p>Are you ready to unleash your creativity and showcase your design skills? We are excited
+                            to announce our upcoming UI/UX designing competition, which will be enkindled on the
+                            27th of April. With the power of technology at your fingertips and your passion for
+                            design, the possibilities are endless. Join us as we push the boundaries of design and
+                            create unforgettable user experiences. Are you ready to accept the challenge?</p>
+                        <button class="reg-btn"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSd8rPv0T9SeL9mZgLfdEAr3PZQvbX6n5GvKrREz_uMuPeMKyQ/viewform"
+                                style="text-decoration: none; color: white;">Register</a></button>
+                    </div>
+                </div>
+                <button class="close-btn">Close</button>
+            </div>
+            <div class="popup" id="survey-hunt-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/survey.jpg" alt="Survey Hunt" class="popup-image">
+                    <div>
                         <h2>Survey Hunt</h2>
-                        <p>Step into the world of mystery and excitement as you set out on a quest to uncover the treasure that lies ahead. Gear up your engineering minds to decode your way to the destination. The hints given during the course of the game will be related 'surveying in civil engineering'.  Unlock clues, solve puzzles, and race against the clock to find the treasure before it's too late!</p>
-                        <button class="reg-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf8_7L65XxzUwVZF0Nn1FDmq2JUS_ChcwI-z1DdRUcgSSjq3A/viewform?usp=sf_link" style="text-decoration: none; color: white;">Register</a></button>
-                      </div>
+                        <p>Step into the world of mystery and excitement as you set out on a quest to uncover the
+                            treasure that lies ahead. Gear up your engineering minds to decode your way to the
+                            destination. The hints given during the course of the game will be related 'surveying in
+                            civil engineering'. Unlock clues, solve puzzles, and race against the clock to find the
+                            treasure before it's too late!</p>
+                        <button class="reg-btn"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSf8_7L65XxzUwVZF0Nn1FDmq2JUS_ChcwI-z1DdRUcgSSjq3A/viewform?usp=sf_link"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
-                  </div>
-                  <div class="popup" id="Drone-Xtreme-popup">
-                    <div class="popup-content">
-                      <img src="assets/imgs/Drone Xtreme.jpg" alt="Drone Xtreme" class="popup-image">
-                      <div>
+                </div>
+                <button class="close-btn">Close</button>
+            </div>
+            <div class="popup" id="Drone-Xtreme-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/Drone Xtreme.jpg" alt="Drone Xtreme" class="popup-image">
+                    <div>
                         <h2>Drone Xtreme</h2>
                         <p>Drone racing competition
-                
-                            Get ready to take to the skies and experience the ultimate adrenaline rush with the most exhilarating sport of the future – Drone Racing!
-                            Watch as pilots navigate their high-speed drones through a series of challenging obstacles, racing against the clock and each other for the ultimate prize.
-                            It's a high-tech, high-speed adventure like no other, and you won't want to miss a second of the action. So let's go – it's time to soar to new heights with the Drone Racing Competition!</p>
-                        <button class="reg-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSevbcX4Q0czW8ugABljVA65BamHk8eVk9uzcoS8_gVKKmfPVA/viewform?usp=sf_link" style="text-decoration: none; color: white;">Register</a></button>
-                      </div>
+
+                            Get ready to take to the skies and experience the ultimate adrenaline rush with the most
+                            exhilarating sport of the future – Drone Racing!
+                            Watch as pilots navigate their high-speed drones through a series of challenging obstacles,
+                            racing against the clock and each other for the ultimate prize.
+                            It's a high-tech, high-speed adventure like no other, and you won't want to miss a second of
+                            the action. So let's go – it's time to soar to new heights with the Drone
+                            Racing Competition!</p>
+                        <button class="reg-btn"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSevbcX4Q0czW8ugABljVA65BamHk8eVk9uzcoS8_gVKKmfPVA/viewform?usp=sf_link"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
-                  </div>
-                  <div class="popup" id="Technical-Quiz-popup">
-                    <div class="popup-content">
-                      <img src="assets/imgs/Technical Quiz.jpg" alt="Technical-Quiz" class="popup-image">
-                      <div>
+                </div>
+                <button class="close-btn">Close</button>
+            </div>
+            <div class="popup" id="Technical-Quiz-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/Technical Quiz.jpg" alt="Technical-Quiz" class="popup-image">
+                    <div>
                         <h2>Technical Quiz</h2>
                         <p>Are you ready to put your technical knowledge to the test?
-                            Get ready to dive deep into a series of challenging questions designed to push your limits and expand your knowledge.
+                            Get ready to dive deep into a series of challenging questions designed to push your limits
+                            and expand your knowledge.
                             So buckle up, put on your thinking cap, and let's get started!</p>
-                        <button class="reg-btn"><a href="https://forms.gle/hXYvTQGY7HF9goXL7" style="text-decoration: none; color: white;">Register</a></button>
-                      </div>
+                        <button class="reg-btn"><a href="https://forms.gle/hXYvTQGY7HF9goXL7"
+                                style="text-decoration: none; color: white;">Register</a></button>
                     </div>
-                    <button class="close-btn">Close</button>
-                  </div>
-                   <!-- krichoff -->
-                <div class="popup" id="Kirchoff-Caper-Treasure-Hunt-popup">
-                    <div class="popup-content">
-                        <img src="assets/imgs/Kirchoff's-Caper-Treasure-Hunt.jpg" alt="Kirchoff's Caper Treasure Hunt"
-                            class="popup-image">
-                        <div>
-                            <h2>Kirchoff's Caper Treasure Hunt</h2>
-                            <p>KIRCHHOFF'S CAPER
-                                Get ready to put your circuitry skills to the test at Kirchhoff's Caper! With two rounds
-                                of
-                                competition, including a thrilling treasure hunt and circuit implementation challenge,
-                                this event is
-                                the perfect opportunity to show off your knowledge and problem-solving abilities.
-                                Maximum three
-                                members per team. Join us for Kirchhoff's Caper and discover the thrill of circuitry!
-                            </p>
-                            <button class="reg-btn"><a
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSeM5ES39eZXRwUxAPiHZlURn3n5RpHB3fzK27sp2svQ6UnPzw/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"
-                                    style="text-decoration: none; color: white;">Register</a></button>
-                        </div>
-                    </div>
-                    <button class="close-btn">Close</button>
                 </div>
-
+                <button class="close-btn">Close</button>
             </div>
-            <footer class="footer">
-                <div class="footer__redes">
-                    <ul class="footer__redes-wrapper">
-                        <li>
-                            <a href="https://www.facebook.com/astralsbce?mibextid=ZbWKwL" class="footer__link">
-                                <i class="fab fa-facebook-f"></i>
-                                facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/astral_sbce?igshid=ZDdkNTZiNTM=" class="footer__link">
-                                <i class="fab fa-instagram"></i>
-                                instagram
-                            </a>
-                        </li>
-                    </ul>
+            <!-- krichoff -->
+            <div class="popup" id="Kirchoff-Caper-Treasure-Hunt-popup">
+                <div class="popup-content">
+                    <img src="assets/imgs/Kirchoff's-Caper-Treasure-Hunt.jpg" alt="Kirchoff's Caper Treasure Hunt"
+                        class="popup-image">
+                    <div>
+                        <h2>Kirchoff's Caper Treasure Hunt</h2>
+                        <p>KIRCHHOFF'S CAPER
+                            Get ready to put your circuitry skills to the test at Kirchhoff's Caper! With two rounds
+                            of
+                            competition, including a thrilling treasure hunt and circuit implementation challenge,
+                            this event is
+                            the perfect opportunity to show off your knowledge and problem-solving abilities.
+                            Maximum three
+                            members per team. Join us for Kirchhoff's Caper and discover the thrill of circuitry!
+                        </p>
+                        <button class="reg-btn"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSeM5ES39eZXRwUxAPiHZlURn3n5RpHB3fzK27sp2svQ6UnPzw/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"
+                                style="text-decoration: none; color: white;">Register</a></button>
+                    </div>
                 </div>
-                <div class="separador"></div>
-                <p class="footer__texto">SREE BUDDHA COLLEGE OF ENGINEERING, PATTOOR P.O, NOORANAD, ALAPPUZHA - 690529
-                </p>
-                <p class="footer__textoc">Copyright &copy; 2023 All Rights Reserved by
-                    <a href="#">SBCE</a>.
-                </p>
-            </footer>
-
+                <button class="close-btn">Close</button>
+            </div>
 
         </div>
-        <script>
-            var lineDrawing = anime({
-                targets: '#lineDrawing .lines path',
-                strokeDashoffset: [anime.setDashoffset, 0],
-                easing: 'easeInOutSine',
-                duration: 4000,
-                direction: 'alternate',
-                delay: 500,
-                loop: true,
-            });
-        </script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="assets/slick/slick.min.js"></script>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/vendor/jquery/jquery.min.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
-        <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-        <script src="assets/vendor/counterup/counterup.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/venobox/venobox.min.js"></script>
-        <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-        <script src="assets/vendor/typed.js/typed.min.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
+        <footer class="footer">
+            <div class="footer__redes">
+                <ul class="footer__redes-wrapper">
+                    <li>
+                        <a href="https://www.facebook.com/astralsbce?mibextid=ZbWKwL" class="footer__link">
+                            <i class="fab fa-facebook-f"></i>
+                            facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/astral_sbce?igshid=ZDdkNTZiNTM=" class="footer__link">
+                            <i class="fab fa-instagram"></i>
+                            instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="separador"></div>
+            <p class="footer__texto">SREE BUDDHA COLLEGE OF ENGINEERING, PATTOOR P.O, NOORANAD, ALAPPUZHA - 690529
+            </p>
+            <p class="footer__textoc">Copyright &copy; 2023 All Rights Reserved by
+                <a href="#">SBCE</a>.
+            </p>
+        </footer>
+
+
+    </div>
+    <script>
+        var lineDrawing = anime({
+            targets: '#lineDrawing .lines path',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 4000,
+            direction: 'alternate',
+            delay: 500,
+            loop: true,
+        });
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
 </body>
 
 </html>
