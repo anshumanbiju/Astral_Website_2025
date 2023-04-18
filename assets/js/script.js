@@ -249,3 +249,18 @@ $('.slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+var myDiv = document.getElementById("nav");
+var divHeight = myDiv.offsetHeight;
+var navbarvid = document.getElementById("vvv");
+var logobutton = document.getElementById("burgerBtn");
+
+if (isSafari) {
+  console.log("User is using Safari browser");
+  console.log("The height of myDiv is: " + divHeight + " pixels.");
+  navbarvid.style.height = divHeight-20+"px";
+  logobutton.style.width = "auto"
+} else {
+  console.log("User is not using Safari browser");
+}
