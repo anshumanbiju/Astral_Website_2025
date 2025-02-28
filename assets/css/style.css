@@ -1,6 +1,6 @@
 /* @import url("https://fonts.cdnfonts.com/css/gotham"); */
 
-#loader {
+#lo17ader {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,17 +13,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 @font-face {
   font-family: 'valorant';
   /* src: url('../fonts/Valorant\ Font.ttf'); */
   src: url('../fonts/mokoto.regular.ttf')
-}
-@font-face {
-  font-family: 'Roespec';
-  /* src: url('../fonts/Valorant\ Font.ttf'); */
-  src: url('../fonts/Reospec.otf')
 }
 
 /* section{
@@ -44,7 +39,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ff8000;
+  background-color: #ff0000;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -63,7 +58,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Gotham", sans-serif;
-  
 }
 
 a {
@@ -126,7 +120,7 @@ a {
 
 .menu-list3 li a:after {
   content: attr(data-text);
-  color: #572606;
+  color: #e21818;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -165,8 +159,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(100, 60, 7);
-    background: radial-gradient(circle, rgb(68, 46, 19) 24%, rgb(140, 93, 12) 60%);
+    background: rgb(63, 11, 6);
+    background: radial-gradient(circle, rgb(95, 21, 14) 24%, rgb(63, 11, 6) 60%);
     padding: 20px 0;
     z-index: 999;
   }
@@ -208,7 +202,7 @@ a {
   .menu-list3 li a,
   .menu-list3 li a:after {
     display: block;
-    font-size: 40px;  
+    font-size: 40px;
     color: #ffffff;
     white-space: pre;
     font-weight: bold;
@@ -218,7 +212,7 @@ a {
 
   .menu-list3 li a:after {
     content: attr(data-text);
-    color: #a55723;
+    color: #e21818;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -332,7 +326,7 @@ a {
 .menu-list1 li a {
   font-size: 18px;
   align-items: center;
-  background-color: rgba(174, 83, 30, 0.459);
+  background-color: rgba(255, 0, 0, 0.459);
   color: white;
   padding: 15px;
   transform: skewX(30deg);
@@ -370,7 +364,7 @@ a {
 .menu-list2 li a {
   font-size: 18px;
   align-items: center;
-  background-color: rgba(127, 64, 10, 0.459);
+  background-color: rgba(255, 0, 0, 0.459);
   color: white;
   padding: 15px;
   transform: skewX(-30deg);
@@ -443,7 +437,7 @@ a {
 }
 
 .centered-text h2 span {
-  color: rgba(133, 73, 17, 0.864);
+  color: rgb(255, 0, 0);
   /* background: linear-gradient(270deg, rgba(255,167,194,1) 1%, rgba(255,37,89,1) 40%); */
   -webkit-background-clip: text;
   background-clip: text;
@@ -463,7 +457,7 @@ a {
 }
 
 .tag p span {
-  color: rgb(133, 73, 17, 0.864);
+  color: red;
 }
 
 .spinner {
@@ -822,7 +816,7 @@ a {
 
 /* aboutus */
 .about-us {
-  background: url(../imgs/background3.png);
+  background: url(../imgs/background1.png);
   /* padding: 50px 0; */
   margin-top: 0;
   background-repeat: no-repeat;
@@ -858,7 +852,7 @@ a {
 }
 
 .about-us h2 span {
-  color: rgb(207, 114, 22);
+  color: rgb(255, 0, 0);
   /* background: linear-gradient(270deg, rgba(255,167,194,1) 1%, rgba(255,37,89,1) 40%); */
   -webkit-background-clip: text;
   background-clip: text;
@@ -1394,12 +1388,12 @@ a {
 
 /* workshop */
 .workshop{
-  -webkit-backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 .wk-section {
   margin-top: 0;
-  background-image: url(../imgs/background2.jpg);
+  background-image: url(../imgs/Screenshot\ \(258\).png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1609,7 +1603,7 @@ a {
 }
 
 .site-footer a:hover {
-  color: #b1620d;
+  color: #b10d0d;
   text-decoration: none;
 }
 
@@ -2063,18 +2057,18 @@ a {
 
 .profile-container:hover .profile-wrapper::after {
   transform: skew(30deg) translateX(125%);
-  background: linear-gradient(to right, #4f2407 0%, #a36022 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
 
 }
 
 .profile-container:hover .profile-wrapper::before {
   transform: skew(30deg) translateX(-125%);
-  background: linear-gradient(to right, #4f0707 0%, #a35622 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
 }
 
 /* Profile Card */
 .profile-card {
-  background-image: url(../imgs/background3.jpg);
+  background-image: url(../imgs/backimg.jpg);
   width: 100%;
   height: 100%;
   display: flex;
@@ -2095,7 +2089,7 @@ a {
 }
 
 .profile-card .fav-icon {
-  color: #ec720e;
+  color: #ec0e0e;
   position: absolute;
   top: 5px;
   left: 10px;
@@ -2112,7 +2106,7 @@ a {
   border-radius: 50%;
   margin: 1rem 0;
   border: 2px solid transparent;
-  background-image: linear-gradient(to right, #4f3007 0%, #a35322 100%);
+  background-image: linear-gradient(to right, #4f0707 0%, #a32222 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
   /* border: 2px solid #1999; */
@@ -2163,7 +2157,7 @@ a {
 }
 
 #lineDrawing {
-  background: #070707;
+  background: #f4a8a8;
   margin: 0px;
   height: 100vh;
   text-align: center;
@@ -2291,16 +2285,9 @@ section {
 }
 
 .hide1 {
-  
-  
-  
-  /*startwithzeroopacity*/
-
-  position: relative;
   opacity: 1;
+  /*startwithzeroopacity*/
 }
-
-
 
 .hide1.fade-in {
   -webkit-animation: fadein 1s;
@@ -2419,7 +2406,7 @@ section {
 
 .mobile-menu .menu-list3 li a:after {
   content: attr(data-text);
-  color: #e26518;
+  color: #e21818;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2555,7 +2542,7 @@ section {
   padding: 8px 20px;
   margin-top: 1rem;
   border-radius: 50px;
-  background: linear-gradient(to right, #4f2f07 0%, #a36b22 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
 }
 
 .card:hover .character {
@@ -2641,7 +2628,7 @@ section {
   cursor: pointer;
 }
 .reg-btn {
-  background-color: #bc6209;
+  background-color: #bc0909;
   color: #fff;
   margin-top: 10px;
   font-family: 'valorant';
@@ -2693,7 +2680,7 @@ section {
 
 
 .footer {
-  background: linear-gradient(to bottom, #4a3c2c 10%, #060402 90%);
+  background: linear-gradient(to bottom, #000000fd 10%, #552f03af 90%);
   padding: 10px;
 }
 
@@ -2721,7 +2708,7 @@ section {
   color: white;
 }
 .footer__textoc a{
-  color: rgb(244, 111, 10);
+  color: red;
 }
 .footer__textoc a:hover{
   color: rgba(12, 0, 0, 0.999);
