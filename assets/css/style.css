@@ -13,10 +13,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
 
 @font-face {
   font-family: 'valorant';
+  /* src: url('../fonts/Valorant\ Font.ttf'); */
+  src: url('../fonts/mokoto.regular.ttf')
+}
+@font-face {
+  font-family: 'Roespec';
   /* src: url('../fonts/Valorant\ Font.ttf'); */
   src: url('../fonts/Reospec.otf')
 }
@@ -39,7 +44,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ff0000;
+  background-color: #ff8000;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -52,12 +57,13 @@ body {
 
 body {
   margin: 0;
-  background-image: url("../imgs/background1.png");
+  background-image: url("../imgs/background3.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Gotham", sans-serif;
+  
 }
 
 a {
@@ -120,7 +126,7 @@ a {
 
 .menu-list3 li a:after {
   content: attr(data-text);
-  color: #e21818;
+  color: #572606;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -159,8 +165,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(63, 11, 6);
-    background: radial-gradient(circle, rgb(95, 21, 14) 24%, rgb(63, 11, 6) 60%);
+    background: rgb(100, 60, 7);
+    background: radial-gradient(circle, rgb(68, 46, 19) 24%, rgb(140, 93, 12) 60%);
     padding: 20px 0;
     z-index: 999;
   }
@@ -202,7 +208,7 @@ a {
   .menu-list3 li a,
   .menu-list3 li a:after {
     display: block;
-    font-size: 40px;
+    font-size: 40px;  
     color: #ffffff;
     white-space: pre;
     font-weight: bold;
@@ -212,7 +218,7 @@ a {
 
   .menu-list3 li a:after {
     content: attr(data-text);
-    color: #e21818;
+    color: #a55723;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -326,7 +332,7 @@ a {
 .menu-list1 li a {
   font-size: 18px;
   align-items: center;
-  background-color: rgba(255, 0, 0, 0.459);
+  background-color: rgba(174, 83, 30, 0.459);
   color: white;
   padding: 15px;
   transform: skewX(30deg);
@@ -364,7 +370,7 @@ a {
 .menu-list2 li a {
   font-size: 18px;
   align-items: center;
-  background-color: rgba(255, 0, 0, 0.459);
+  background-color: rgba(127, 64, 10, 0.459);
   color: white;
   padding: 15px;
   transform: skewX(-30deg);
@@ -437,7 +443,7 @@ a {
 }
 
 .centered-text h2 span {
-  color: rgb(255, 0, 0);
+  color: rgba(133, 73, 17, 0.864);
   /* background: linear-gradient(270deg, rgba(255,167,194,1) 1%, rgba(255,37,89,1) 40%); */
   -webkit-background-clip: text;
   background-clip: text;
@@ -457,7 +463,7 @@ a {
 }
 
 .tag p span {
-  color: red;
+  color: rgb(133, 73, 17, 0.864);
 }
 
 .spinner {
@@ -816,7 +822,7 @@ a {
 
 /* aboutus */
 .about-us {
-  background: url(../imgs/background1.png);
+  background: url(../imgs/background3.png);
   /* padding: 50px 0; */
   margin-top: 0;
   background-repeat: no-repeat;
@@ -852,7 +858,7 @@ a {
 }
 
 .about-us h2 span {
-  color: rgb(255, 0, 0);
+  color: rgb(207, 114, 22);
   /* background: linear-gradient(270deg, rgba(255,167,194,1) 1%, rgba(255,37,89,1) 40%); */
   -webkit-background-clip: text;
   background-clip: text;
@@ -1388,12 +1394,12 @@ a {
 
 /* workshop */
 .workshop{
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(10px);
 }
 .wk-section {
   margin-top: 0;
-  background-image: url(../imgs/Screenshot\ \(258\).png);
+  background-image: url(../imgs/background2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1603,7 +1609,7 @@ a {
 }
 
 .site-footer a:hover {
-  color: #b10d0d;
+  color: #b1620d;
   text-decoration: none;
 }
 
@@ -2057,18 +2063,18 @@ a {
 
 .profile-container:hover .profile-wrapper::after {
   transform: skew(30deg) translateX(125%);
-  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
+  background: linear-gradient(to right, #4f2407 0%, #a36022 100%);
 
 }
 
 .profile-container:hover .profile-wrapper::before {
   transform: skew(30deg) translateX(-125%);
-  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
+  background: linear-gradient(to right, #4f0707 0%, #a35622 100%);
 }
 
 /* Profile Card */
 .profile-card {
-  background-image: url(../imgs/backimg.jpg);
+  background-image: url(../imgs/background3.jpg);
   width: 100%;
   height: 100%;
   display: flex;
@@ -2089,7 +2095,7 @@ a {
 }
 
 .profile-card .fav-icon {
-  color: #ec0e0e;
+  color: #ec720e;
   position: absolute;
   top: 5px;
   left: 10px;
@@ -2106,7 +2112,7 @@ a {
   border-radius: 50%;
   margin: 1rem 0;
   border: 2px solid transparent;
-  background-image: linear-gradient(to right, #4f0707 0%, #a32222 100%);
+  background-image: linear-gradient(to right, #4f3007 0%, #a35322 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
   /* border: 2px solid #1999; */
@@ -2157,7 +2163,7 @@ a {
 }
 
 #lineDrawing {
-  background: #f4a8a8;
+  background: #070707;
   margin: 0px;
   height: 100vh;
   text-align: center;
@@ -2285,9 +2291,16 @@ section {
 }
 
 .hide1 {
-  opacity: 1;
+  
+  
+  
   /*startwithzeroopacity*/
+
+  position: relative;
+  opacity: 1;
 }
+
+
 
 .hide1.fade-in {
   -webkit-animation: fadein 1s;
@@ -2406,7 +2419,7 @@ section {
 
 .mobile-menu .menu-list3 li a:after {
   content: attr(data-text);
-  color: #e21818;
+  color: #e26518;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2542,7 +2555,7 @@ section {
   padding: 8px 20px;
   margin-top: 1rem;
   border-radius: 50px;
-  background: linear-gradient(to right, #4f0707 0%, #a32222 100%);
+  background: linear-gradient(to right, #4f2f07 0%, #a36b22 100%);
 }
 
 .card:hover .character {
@@ -2628,7 +2641,7 @@ section {
   cursor: pointer;
 }
 .reg-btn {
-  background-color: #bc0909;
+  background-color: #bc6209;
   color: #fff;
   margin-top: 10px;
   font-family: 'valorant';
@@ -2680,7 +2693,7 @@ section {
 
 
 .footer {
-  background: linear-gradient(to bottom, #000000 10%, #550303af 90%);
+  background: linear-gradient(to bottom, #4a3c2c 10%, #060402 90%);
   padding: 10px;
 }
 
@@ -2708,7 +2721,7 @@ section {
   color: white;
 }
 .footer__textoc a{
-  color: red;
+  color: rgb(244, 111, 10);
 }
 .footer__textoc a:hover{
   color: rgba(12, 0, 0, 0.999);
