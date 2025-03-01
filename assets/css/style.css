@@ -1,4 +1,10 @@
 /* @import url("https://fonts.cdnfonts.com/css/gotham"); */
+:root {
+  --font-primary: "valorant",sans-serif;
+  --font-secondary: "Gotham", sans-serif;
+  --font-third: 'Montserrat',sans-serif;
+}
+
 
 #loader {
   position: fixed;
@@ -6,8 +12,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  
-  font-family: 'valorant', sans-serif;
+
+  font-family:var(--font-primary);
   background-color: #020202;
   z-index: 9999;
   display: flex;
@@ -16,7 +22,7 @@
 }
 
 @font-face {
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   /* src: url('../fonts/Valorant\ Font.ttf'); */
   src: url('../fonts/Reospec.otf')
 }
@@ -62,7 +68,7 @@ body {
 
 a {
   text-decoration: none;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   font-size: 25px;
 }
 
@@ -429,7 +435,7 @@ a {
   font-size: 98px;
   font-weight: bold;
   text-align: center;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   /* font-family: 'Cinzel Decorative', cursive; */
   margin: 0;
   line-height: 1.2;
@@ -449,7 +455,7 @@ a {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   /* font-family: 'Cinzel Decorative', cursive; */
   margin: 0;
   line-height: 1.2;
@@ -675,7 +681,7 @@ a {
   font-weight: bold;
   text-align: center;
   color: white;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   /* font-family: 'Cinzel Decorative', cursive; */
   line-height: 1.2;
   text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7)
@@ -834,7 +840,7 @@ a {
   padding-right: 50px;
 }
 
-.black-fade-top{
+.black-fade-top {
   margin: 0px;
   background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 60%);
   width: 100%;
@@ -845,7 +851,7 @@ a {
   text-align: center;
   font-size: 36px;
   color: white;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 300px;
@@ -1313,7 +1319,7 @@ a {
 }
 
 .events-section h2 {
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   color: white;
 }
 
@@ -1329,7 +1335,7 @@ a {
   padding: 50px;
 }
 
-.events-container .container{
+.events-container .container {
   margin-bottom: 10px;
 }
 
@@ -1355,7 +1361,7 @@ a {
   position: absolute;
   top: 50%;
   color: white;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   font-size: 25px;
   left: 25%;
   transform: translate(-50%, -50%);
@@ -1368,7 +1374,7 @@ a {
 
 .event-title {
   margin-top: 0;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   color: white;
 }
 
@@ -1387,10 +1393,11 @@ a {
 }
 
 /* workshop */
-.workshop{
+.workshop {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
+
 .wk-section {
   margin-top: 0;
   background-image: url(../imgs/Screenshot\ \(258\).png);
@@ -1403,13 +1410,13 @@ a {
 }
 
 .wk-section h2 {
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   color: white;
 }
 
 .wk-container {
   /* margin-left: 300px; */
-  
+
   backdrop-filter: blur(1px);
 }
 
@@ -1513,7 +1520,7 @@ a {
 
 .containerwidth h3 {
   color: #f9f9f9;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   font-size: 30px;
   text-align: center;
 }
@@ -1581,9 +1588,9 @@ a {
   font-size: 15px;
   line-height: 34px;
   color: #ffffff;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 24%, rgba(11,92,5,1) 99%);
-   background-attachment: fixed;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 24%, rgba(11, 92, 5, 1) 99%);
+  background-attachment: fixed;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 
@@ -1684,8 +1691,8 @@ a {
     /* max-width: 100vw; */
     /* overflow: hidden; */
   }
-  
-  .boxaccordion{
+
+  .boxaccordion {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -1720,17 +1727,20 @@ a {
   .site-footer .social-icons {
     text-align: center
   }
+
   .footer__redes-wrapper {
     padding: 0;
-}
+  }
+
   .footer__link {
     text-transform: uppercase;
     font-size: 14px;
   }
+
   .site-footer {
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgb(2, 103, 2)2%, rgb(29, 24, 1)75%); 
-  }   
+    background: linear-gradient(0deg, rgb(2, 103, 2)2%, rgb(29, 24, 1)75%);
+  }
 }
 
 
@@ -1875,6 +1885,7 @@ a {
     text-transform: uppercase;
     font-size: 14px;
   }
+
   /* .site-footer {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgb(2, 103, 2)2%, rgb(29, 24, 1)75%);
@@ -2592,7 +2603,7 @@ section {
 .popup h2 {
   --text-glitch-time: 2s;
   color: white;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
 }
 
 .popup p {
@@ -2621,31 +2632,34 @@ section {
   background-color: #ffffff;
   color: #000000;
   margin-top: 10px;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .reg-btn {
   background-color: #bc0909;
   color: #fff;
   margin-top: 10px;
-  font-family: 'valorant';
+  font-family: var(--font-primary);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .close-btn:hover {
   background-color: #380505;
 }
 
 /* Media queries */
 @media screen and (max-width: 768px) {
-  .wk-container{
+  .wk-container {
     padding-left: 0;
   }
+
   .popup-image {
     width: 35%;
     max-width: 90%;
@@ -2659,20 +2673,23 @@ section {
     border-radius: 20px;
     padding: 20px;
   }
-  .close-btn a{
+
+  .close-btn a {
     font-size: 18px;
   }
-  
+
   .popup-content {
     display: block;
   }
-  .popup p{
+
+  .popup p {
     font-size: 12px;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     /* line-height: 18px; */
   }
-  .footer__texto{
+
+  .footer__texto {
     font-size: 18px;
   }
 }
@@ -2707,12 +2724,15 @@ section {
   font-size: rem(14);
   color: white;
 }
-.footer__textoc a{
+
+.footer__textoc a {
   color: red;
 }
-.footer__textoc a:hover{
+
+.footer__textoc a:hover {
   color: rgba(12, 0, 0, 0.999);
 }
+
 .footer .fab {
   margin-right: 8px;
 }
@@ -2725,6 +2745,7 @@ section {
   font-family: 'Montserrat', sans-serif;
   margin-top: 5px
 }
+
 .footer__textoc {
   color: #fff;
   text-align: center;
@@ -2755,7 +2776,9 @@ section {
   width: 20%;
   padding: 10px;
 }
-.slick-prev:before, .slick-next:before{
+
+.slick-prev:before,
+.slick-next:before {
   margin-left: 15px;
 }
 
@@ -2770,38 +2793,46 @@ section {
     width: 50%;
     padding: 10px;
   }
-  .footer__texto{
+
+  .footer__texto {
     font-size: 12px;
   }
-  .footer__textoc{
+
+  .footer__textoc {
     font-size: 9px;
   }
-  .slick-prev:before, .slick-next:before{
+
+  .slick-prev:before,
+  .slick-next:before {
     display: none;
   }
 }
 
-.eve{
+.eve {
   width: 100%;
 }
-.eventpage-container{
+
+.eventpage-container {
   background-color: #000000;
   display: flex;
   overflow: hidden;
   /* padding: 100px; */
 }
-@media screen and (max-width: 640px){
-  .eventpage-container{
+
+@media screen and (max-width: 640px) {
+  .eventpage-container {
     display: block;
     width: 100%;
   }
 }
-@media (max-width:767px){
-  #technical{
+
+@media (max-width:767px) {
+  #technical {
     padding-left: 0;
   }
 }
-.eventpage-container .title{
+
+.eventpage-container .title {
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 10px;
@@ -2816,7 +2847,7 @@ section {
 }
 
 .event-content .content-overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   height: 99%;
   width: 100%;
@@ -2830,19 +2861,21 @@ section {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.event-content:hover .content-overlay{
+.event-content:hover .content-overlay {
   opacity: 1;
 }
 
-.content-image{
+.content-image {
   width: 55%;
   padding-left: 220px;
 }
-@media (max-width:767px){
-  .content-image{
+
+@media (max-width:767px) {
+  .content-image {
     padding-left: 150px;
   }
 }
+
 .content-details {
   position: absolute;
   text-align: center;
@@ -2860,13 +2893,13 @@ section {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.event-content:hover .content-details{
+.event-content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
 
-.content-details h3{
+.content-details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -2874,30 +2907,30 @@ section {
   text-transform: uppercase;
 }
 
-.fadeIn-bottom{
+.fadeIn-bottom {
   top: 80%;
 }
 
-.fadeIn-top{
+.fadeIn-top {
   top: 20%;
 }
 
-.fadeIn-left{
+.fadeIn-left {
   left: 20%;
 }
 
-.fadeIn-right{
+.fadeIn-right {
   left: 80%;
 }
 
-.contact a{
+.contact a {
   color: rgba(255, 255, 255, 0.904);
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
 }
 
-.contact h2{
+.contact h2 {
   color: rgba(255, 255, 255, 0.904);
   font-size: 20px;
   font-weight: 500;
@@ -2906,6 +2939,6 @@ section {
 
 
 /* Event .html tech or non tech text */
-.tech-non-tech{
-	opacity:1;
+.tech-non-tech {
+  opacity: 1;
 }
