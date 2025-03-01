@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astral 2K25</title>
-    <!-- stylesheet -->
+
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -79,6 +79,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+    <style>
+        .ml12 {
+            font-weight: 200;
+            /* font-size: 1.8em; */
+            text-transform: uppercase;
+            /* letter-spacing: 0.5em; */
+        }
+    
+        .ml12 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+    </style>
 </head>
 
 <body>
@@ -102,7 +115,7 @@
     <div class="abc">
         <div class="landing">
 
-            <!-- navbar -->
+ 
             <nav class="nav">
                 <div class="navigation-bar container" id="nav">
                     <div class="item-left" style="transform: skewX(-30deg);">
@@ -144,14 +157,14 @@
                         </div>
                     </div>
 
-                   
+
                 </div>
 
                 <div class="menu-backdrop"></div>
             </nav>
         </div>
 
-        <div id="mobile" class="hide1">
+        <!-- <div id="mobile" class="hide1">
             <section class="workshop" id="workshop">
 
                 <div
@@ -162,8 +175,7 @@
                 </div>
 
                 <div class="wk-container">
-                    <!-- WORKSHOP -->
-                    <!--AI ON THE PLATE-->
+
                     <div class="card ai-on-the-plate-card" data-aos="fade-up" data-aos-duration="1500">
                         <div class="wk-wrapper">
                             <img src="assets/imgs/ai-on-the-plate.jpeg" class="cover-image" />
@@ -224,9 +236,9 @@
                 </div>
             </section>
 
-            <!-- Pop-up screens -->
+ 
             <div class="popup-container">
-                <!--AI ON THE PLATE-->
+
                 <div class="popup" id="ai-on-the-plate-popup">
                     <div class="popup-content">
                         <img src="assets/imgs/ai-on-the-plate.jpeg" alt="AI On The Plate" class="popup-image">
@@ -342,8 +354,8 @@
                     <button class="close-btn">Close</button>
                 </div>
             </div>
-        </div>
-        <footer class="footer">
+        </div> -->
+        <!-- <footer class="footer">
             <div class="footer__redes">
                 <ul class="footer__redes-wrapper">
                     <li>
@@ -366,7 +378,17 @@
             <p class="footer__textoc">Copyright &copy; 2023 All Rights Reserved by
                 <a href="#">SBCE</a>.
             </p>
-        </footer>
+        </footer> -->
+
+        <div id="mobile" class="hide1">
+            <section class="eventpage-container" style="top:-121px;">
+                <div class="eventpage__wrapper">
+        
+                    <h2 class="eventpage__comingsoon ml12">Coming Soon</h2>
+        
+                </div>
+        </div>
+
         <script>
             var lineDrawing = anime({
                 targets: '#lineDrawing .lines path',
@@ -378,6 +400,28 @@
                 loop: true,
             });
             AOS.init();
+
+            // Wrap every letter in a span
+                var textWrapper = document.querySelector('.ml12');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({ loop: true })
+                    .add({
+                        targets: '.ml12 .letter',
+                        translateX: [40, 0],
+                        translateZ: 0,
+                        opacity: [0, 1],
+                        easing: "easeOutExpo",
+                        duration: 1200,
+                        delay: (el, i) => 500 + 30 * i
+                    }).add({
+                        targets: '.ml12 .letter',
+                        translateX: [0, -30],
+                        opacity: [1, 0],
+                        easing: "easeInExpo",
+                        duration: 1100,
+                        delay: (el, i) => 100 + 30 * i
+                    });
         </script>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

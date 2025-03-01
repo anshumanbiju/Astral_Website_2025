@@ -11,16 +11,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
+
     <link rel="favicon" href="assets/imgs/logo.png">
     <link rel="icon" href="assets/imgs/logo.png" type="image/icon type">
     <link rel="apple-touch-icon" href="assets/imgs/logo.png">
     <link rel="mask-icon" href="assets/imgs/logo.png" color="#ff0000">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#000000">
-    <meta name="description" content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
+    <meta name="description"
+        content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
     <meta name="keywords"
-      content="tech fest, tech, tech sbce, sbce, astral, astral 2K23, tech fest alappuzha, alappuzha, kerala, sbce pattoor">
+        content="tech fest, tech, tech sbce, sbce, astral, astral 2K23, tech fest alappuzha, alappuzha, kerala, sbce pattoor">
     <meta name="author" content="Astral">
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="7 days">
@@ -30,10 +31,10 @@
     <meta name="googlebot" content="index, follow">
     <meta name="google" content="nositelinkssearchbox">
     <meta name="google" content="notranslate">
-  
+
     <meta property="og:title" content="Astral 2K23">
     <meta property="og:description"
-      content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
+        content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
     <meta property="og:image" content="assets/imgs/logo.png">
     <meta property="og:url" content=".......">
     <meta property="og:site_name" content="Astral 2K23">
@@ -41,16 +42,16 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="en_GB">
     <meta property="og:locale:alternate" content="en_IN">
-  
+
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@astral_sbce">
     <meta name="twitter:creator" content="@astral_sbce">
     <meta name="twitter:title" content="Astral 2K23">
     <meta name="twitter:description"
-      content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
+        content="Astral is the tech fest of Sree Buddha College of Engineering, Pattoor, Alappuzha">
     <meta name="twitter:image" content="assets/imgs/logo.png">
     <meta name="twitter:image:alt" content="Astral 2K23">
-  
+
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:dnt" content="on">
     <meta name="twitter:domain_verify" content="">
@@ -63,7 +64,7 @@
     <meta name="twitter:app:name:googleplay" content="Astral 2K23">
     <meta name="twitter:app:id:googleplay" content="">
     <meta name="twitter:app:url:googleplay" content="......">
-  
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Astral 2K23">
@@ -78,6 +79,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+    <style>
+        .ml12 {
+            font-weight: 200;
+            /* font-size: 1.8em; */
+            text-transform: uppercase;
+            /* letter-spacing: 0.5em; */
+        }
+
+        .ml12 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+    </style>
 </head>
 
 <body style="background: black;">
@@ -125,7 +139,7 @@
                         <ul class="menu-list3">
                             <li><a href="index.html" data-text="Home">Home</a></li>
                             <li><a href="contact.html" data-text="CONTACT US">CONTACT US</a></li>
-                          
+
                             <li><a href="wk.html" data-text="Workshops">Workshops</a></li>
                         </ul>
                         <div class="home" id="mobileBodyContent">
@@ -152,10 +166,10 @@
                 </div>
 
                 <div class="menu-backdrop"></div>
-            </nav>
+                </nav>
         </div>
 
-        <div id="mobile" class="hide1">
+        <!-- <div id="mobile" class="hide1">
             <section class="eventpage-container">
                   <div class="eve">
                   <div class="event-content">
@@ -181,10 +195,23 @@
             </div>
             </section>
 
+        </div> -->
+
+        <div id="mobile" class="hide1">
+            <section class="eventpage-container">
+                <div class="eventpage__wrapper">
+
+                    <h2 class="eventpage__comingsoon ml12">Coming Soon</h2>
+                  
+                </div>
         </div>
-       
+
+        </section>
+
+    </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     </div>
     <script>
         var lineDrawing = anime({
@@ -196,6 +223,28 @@
             delay: 500,
             loop: true,
         });
+
+       // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml12');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml12 .letter',
+                translateX: [40, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 500 + 30 * i
+            }).add({
+                targets: '.ml12 .letter',
+                translateX: [0, -30],
+                opacity: [1, 0],
+                easing: "easeInExpo",
+                duration: 1100,
+                delay: (el, i) => 100 + 30 * i
+            });
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
